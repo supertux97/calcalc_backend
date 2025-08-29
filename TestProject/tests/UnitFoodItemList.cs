@@ -68,5 +68,14 @@ public class UnitFoodItemList
         Assert.Empty(viewmodel.FoodItems);
     }
     
+    [Fact]
+    public async Task TestFoodItemsSearchFailure2()
+    {
+        var controller = new FoodItemController(MockData.getFakeDbContext());
+        var result = await controller.Index("Hvetemel", null, null, null) as ViewResult;
+        var viewmodel = Assert.IsType<FoodItemIndexViewmodel>(result.Model);
+        Assert.Empty(viewmodel.FoodItems);
+    }
+    
 
 }

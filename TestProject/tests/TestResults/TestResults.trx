@@ -1,124 +1,149 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TestRun id="762ef70b-b2b1-4aa9-b845-03074369179f" name="@MBP-von-Erlend 2025-08-29 14:46:10" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
-  <Times creation="2025-08-29T14:46:10.6535240+02:00" queuing="2025-08-29T14:46:10.6535240+02:00" start="2025-08-29T14:46:06.3581580+02:00" finish="2025-08-29T14:46:10.7183150+02:00" />
-  <TestSettings name="default" id="5738baca-cb8a-4f6a-9106-dd69c8550c92">
-    <Deployment runDeploymentRoot="_MBP-von-Erlend_2025-08-29_14_46_10" />
+<TestRun id="28cefa0c-985e-4e7d-8fab-09b5ba0ffb4d" name="@MBP-von-Erlend 2025-08-29 15:08:05" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-08-29T15:08:05.6451740+02:00" queuing="2025-08-29T15:08:05.6451740+02:00" start="2025-08-29T15:08:00.3473560+02:00" finish="2025-08-29T15:08:05.7722120+02:00" />
+  <TestSettings name="default" id="def45c09-c0c6-4583-ba52-35d7bc18efaa">
+    <Deployment runDeploymentRoot="_MBP-von-Erlend_2025-08-29_15_08_05" />
   </TestSettings>
   <Results>
-    <UnitTestResult executionId="ba2e4776-5e6f-44a2-9d7f-0e1b3144be4a" testId="1e46bb75-37a7-94c7-775f-99cfa820150d" testName="tests.UnitCalculateCalories.TestCalculateCaloriesSynonymsFoods" computerName="MBP-von-Erlend" duration="00:00:00.0324613" startTime="2025-08-29T14:46:10.5687350+02:00" endTime="2025-08-29T14:46:10.6012550+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ba2e4776-5e6f-44a2-9d7f-0e1b3144be4a" />
-    <UnitTestResult executionId="9252ad71-d02b-440b-9598-ce79b2c8aa44" testId="f7ff3589-cbcd-6fb8-33f3-2f93e909b05c" testName="tests.UnitCalculateValidation.TestIngredientAmountRangeReturnsError" computerName="MBP-von-Erlend" duration="00:00:00.0126966" startTime="2025-08-29T14:46:10.5679210+02:00" endTime="2025-08-29T14:46:10.5806630+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9252ad71-d02b-440b-9598-ce79b2c8aa44" />
-    <UnitTestResult executionId="1e821d9e-17e5-4df1-a7a1-7d4139a250b0" testId="960f2cfc-d250-d407-5c1c-58e270558ca7" testName="tests.UnitCalculateValidation.TestNonexistingIngredientReturnsError" computerName="MBP-von-Erlend" duration="00:00:00.0060987" startTime="2025-08-29T14:46:10.5822830+02:00" endTime="2025-08-29T14:46:10.5884340+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1e821d9e-17e5-4df1-a7a1-7d4139a250b0" />
-    <UnitTestResult executionId="c7c76b77-d259-4625-adee-08334899af95" testId="43d30249-834b-0958-c3e4-b2d6c57c6cb8" testName="tests.UnitCalculateCalories.TestCalculateCaloriesNoSpaceAfterUnit" computerName="MBP-von-Erlend" duration="00:00:00.0091105" startTime="2025-08-29T14:46:10.5536300+02:00" endTime="2025-08-29T14:46:10.5627750+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c7c76b77-d259-4625-adee-08334899af95" />
-    <UnitTestResult executionId="024e14f5-f4db-4709-8e3e-2caf3abe532b" testId="0ec6af1e-cdd8-beff-7a83-30926684b22d" testName="tests.UnitCalculateCalories.TestCalculateCalories" computerName="MBP-von-Erlend" duration="00:00:00.0233682" startTime="2025-08-29T14:46:10.5298180+02:00" endTime="2025-08-29T14:46:10.5532620+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="024e14f5-f4db-4709-8e3e-2caf3abe532b" />
-    <UnitTestResult executionId="48c1ef10-9f24-4abb-a959-697c56269cb2" testId="e0566964-445e-0c1a-1c20-5a6d9eea53cb" testName="tests.UnitFoodItemList.TestFoodItemsSeachPagination" computerName="MBP-von-Erlend" duration="00:00:00.0569121" startTime="2025-08-29T14:46:10.5412840+02:00" endTime="2025-08-29T14:46:10.5982270+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="48c1ef10-9f24-4abb-a959-697c56269cb2" />
-    <UnitTestResult executionId="59a8a6fe-3cb7-4e17-991a-ec27edeaa7a0" testId="125c1589-e5f8-bcbd-70f0-122f5e6ac881" testName="tests.UnitCalculateValidation.TestIngredientInvalidFormatReturnsError" computerName="MBP-von-Erlend" duration="00:00:01.1492905" startTime="2025-08-29T14:46:09.3602010+02:00" endTime="2025-08-29T14:46:10.5191840+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="59a8a6fe-3cb7-4e17-991a-ec27edeaa7a0" />
-    <UnitTestResult executionId="06369fc6-e86a-4924-bb82-55173a8f4b1b" testId="85396bb9-4fb3-e157-906c-646fdeaf26c8" testName="tests.UnitFoodItemList.TestFoodItemsSeachNoResults" computerName="MBP-von-Erlend" duration="00:00:00.0062760" startTime="2025-08-29T14:46:10.5986580+02:00" endTime="2025-08-29T14:46:10.6049800+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="06369fc6-e86a-4924-bb82-55173a8f4b1b" />
-    <UnitTestResult executionId="90f9911c-7c3a-4878-80d4-7e7e2bf38db6" testId="252a700f-8019-4208-367b-5066a5ae6d8d" testName="tests.UnitCalculateValidation.TestIngredientOptionReturnsError" computerName="MBP-von-Erlend" duration="00:00:00.0094248" startTime="2025-08-29T14:46:10.5525500+02:00" endTime="2025-08-29T14:46:10.5620240+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="90f9911c-7c3a-4878-80d4-7e7e2bf38db6" />
-    <UnitTestResult executionId="81e620a7-f9e0-45c0-b3e7-b3b6c2161565" testId="52ce9d00-4c0f-e9d7-5774-db2c67cd0fbf" testName="tests.UnitCalculateValidation.TestIngredientInvalidAmountFormatReturnsError" computerName="MBP-von-Erlend" duration="00:00:00.0220654" startTime="2025-08-29T14:46:10.5298180+02:00" endTime="2025-08-29T14:46:10.5519710+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="81e620a7-f9e0-45c0-b3e7-b3b6c2161565" />
-    <UnitTestResult executionId="30f4fc8a-d72a-4903-9a20-88eb793c0e55" testId="a97ae475-b70c-9e7b-5e73-6de8c325a784" testName="tests.UnitCalculateValidation.TestCorrectFormatReturnsNoError" computerName="MBP-von-Erlend" duration="00:00:00.0156257" startTime="2025-08-29T14:46:10.5986470+02:00" endTime="2025-08-29T14:46:10.6143190+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="30f4fc8a-d72a-4903-9a20-88eb793c0e55" />
-    <UnitTestResult executionId="91c5d716-0423-47dc-a9ff-a8facf1ff0fa" testId="3b9c4a8c-c8c3-8316-e230-de3ea1034dd7" testName="tests.UnitCalculateValidation.TestIngredientInaccurateUnit" computerName="MBP-von-Erlend" duration="00:00:00.0045442" startTime="2025-08-29T14:46:10.5628260+02:00" endTime="2025-08-29T14:46:10.5674130+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="91c5d716-0423-47dc-a9ff-a8facf1ff0fa" />
-    <UnitTestResult executionId="2b1d6bb6-6ddc-4b9d-a25c-aa716f0805d7" testId="85944d65-c45b-7f68-f3fe-c15f18418bd9" testName="tests.UnitCalculateCalories.TestCalculateCaloriesNoUnit" computerName="MBP-von-Erlend" duration="00:00:00.0049887" startTime="2025-08-29T14:46:10.5632000+02:00" endTime="2025-08-29T14:46:10.5682250+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2b1d6bb6-6ddc-4b9d-a25c-aa716f0805d7" />
-    <UnitTestResult executionId="1c9dc591-3977-4597-a396-6ac5f017136d" testId="0104c214-814a-ebce-d741-ec7bd6a1a6c3" testName="tests.UnitCalculateValidation.TestOptionalIngredientReturnsError" computerName="MBP-von-Erlend" duration="00:00:00.0089897" startTime="2025-08-29T14:46:10.5890530+02:00" endTime="2025-08-29T14:46:10.5980940+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1c9dc591-3977-4597-a396-6ac5f017136d" />
-    <UnitTestResult executionId="ab86ae07-1d7b-42c6-a578-006e433ee7b7" testId="a39a31d8-da7c-e742-4a96-41db26604d97" testName="tests.UnitFoodItemList.TestFoodItemsSearch" computerName="MBP-von-Erlend" duration="00:00:01.1709841" startTime="2025-08-29T14:46:09.3602010+02:00" endTime="2025-08-29T14:46:10.5406270+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ab86ae07-1d7b-42c6-a578-006e433ee7b7" />
-    <UnitTestResult executionId="e94c3364-b840-4354-814d-aa969c030386" testId="a51ba8a6-106b-8b0a-d843-19073ace0b39" testName="tests.UnitCalculateCalories.TestCalculateCaloriesSynonymsUnits" computerName="MBP-von-Erlend" duration="00:00:01.1616565" startTime="2025-08-29T14:46:09.3602110+02:00" endTime="2025-08-29T14:46:10.5274640+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e94c3364-b840-4354-814d-aa969c030386" />
+    <UnitTestResult executionId="2945b6c1-e777-465e-aebe-ca64c10194c7" testId="f7ff3589-cbcd-6fb8-33f3-2f93e909b05c" testName="tests.UnitCalculateValidation.TestIngredientAmountRangeReturnsError" computerName="MBP-von-Erlend" duration="00:00:00.0048935" startTime="2025-08-29T15:08:05.5544480+02:00" endTime="2025-08-29T15:08:05.5593940+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2945b6c1-e777-465e-aebe-ca64c10194c7" />
+    <UnitTestResult executionId="3611fc81-fdcf-4348-ace2-d9b9bb4fb798" testId="0104c214-814a-ebce-d741-ec7bd6a1a6c3" testName="tests.UnitCalculateValidation.TestOptionalIngredientReturnsError" computerName="MBP-von-Erlend" duration="00:00:00.0052968" startTime="2025-08-29T15:08:05.5707030+02:00" endTime="2025-08-29T15:08:05.5760620+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3611fc81-fdcf-4348-ace2-d9b9bb4fb798" />
+    <UnitTestResult executionId="37ed87ca-e4a7-4294-bb9a-3f550eb39300" testId="3b9c4a8c-c8c3-8316-e230-de3ea1034dd7" testName="tests.UnitCalculateValidation.TestIngredientInaccurateUnit" computerName="MBP-von-Erlend" duration="00:00:00.0058285" startTime="2025-08-29T15:08:05.5480060+02:00" endTime="2025-08-29T15:08:05.5538800+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="37ed87ca-e4a7-4294-bb9a-3f550eb39300" />
+    <UnitTestResult executionId="1b8f8784-2f7a-4d93-8cbe-63940ffbbb91" testId="43d30249-834b-0958-c3e4-b2d6c57c6cb8" testName="tests.UnitCalculateCalories.TestCalculateCaloriesNoSpaceAfterUnit" computerName="MBP-von-Erlend" duration="00:00:00.0056992" startTime="2025-08-29T15:08:05.5442500+02:00" endTime="2025-08-29T15:08:05.5500040+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1b8f8784-2f7a-4d93-8cbe-63940ffbbb91" />
+    <UnitTestResult executionId="52738456-93f7-4042-9b98-b9953bd37277" testId="52ce9d00-4c0f-e9d7-5774-db2c67cd0fbf" testName="tests.UnitCalculateValidation.TestIngredientInvalidAmountFormatReturnsError" computerName="MBP-von-Erlend" duration="00:00:00.0247965" startTime="2025-08-29T15:08:05.5113670+02:00" endTime="2025-08-29T15:08:05.5362460+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="52738456-93f7-4042-9b98-b9953bd37277" />
+    <UnitTestResult executionId="c19ab83a-3c00-4f5e-99b8-0f2d3eaabb9c" testId="9b642c7b-1947-138e-7712-f0d1c23d8555" testName="tests.UnitFoodItemList.TestFoodItemsSearchFailure" computerName="MBP-von-Erlend" duration="00:00:00.0140593" startTime="2025-08-29T15:08:05.6036960+02:00" endTime="2025-08-29T15:08:05.6412310+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c19ab83a-3c00-4f5e-99b8-0f2d3eaabb9c">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Empty() Failure: Collection was not empty
+Collection: [FoodItem { Calories = 100, Id = 1, Name = "Hvetemel", Synonyms = [], Units = [], ··· }]</Message>
+          <StackTrace>   at tests.UnitFoodItemList.TestFoodItemsSearchFailure() in /Users/erlend/Documents/calcalc/calcalc/TestProject/tests/UnitFoodItemList.cs:line 68
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="dc4cb4a1-f8c7-4216-8c02-ac63ba58390d" testId="a97ae475-b70c-9e7b-5e73-6de8c325a784" testName="tests.UnitCalculateValidation.TestCorrectFormatReturnsNoError" computerName="MBP-von-Erlend" duration="00:00:00.0215223" startTime="2025-08-29T15:08:05.5766710+02:00" endTime="2025-08-29T15:08:05.5982440+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dc4cb4a1-f8c7-4216-8c02-ac63ba58390d" />
+    <UnitTestResult executionId="eb079578-0a53-4f99-be50-e1b78974c2c2" testId="a39a31d8-da7c-e742-4a96-41db26604d97" testName="tests.UnitFoodItemList.TestFoodItemsSearch" computerName="MBP-von-Erlend" duration="00:00:01.3478081" startTime="2025-08-29T15:08:04.1629190+02:00" endTime="2025-08-29T15:08:05.5221420+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="eb079578-0a53-4f99-be50-e1b78974c2c2" />
+    <UnitTestResult executionId="fd7fedbe-06d8-403c-bcd8-1c3ce58a6c7f" testId="85944d65-c45b-7f68-f3fe-c15f18418bd9" testName="tests.UnitCalculateCalories.TestCalculateCaloriesNoUnit" computerName="MBP-von-Erlend" duration="00:00:00.0056057" startTime="2025-08-29T15:08:05.5505950+02:00" endTime="2025-08-29T15:08:05.5562540+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fd7fedbe-06d8-403c-bcd8-1c3ce58a6c7f" />
+    <UnitTestResult executionId="bc85d5f2-c8a5-498d-9647-85bbc01c2ffc" testId="0ec6af1e-cdd8-beff-7a83-30926684b22d" testName="tests.UnitCalculateCalories.TestCalculateCalories" computerName="MBP-von-Erlend" duration="00:00:00.0210538" startTime="2025-08-29T15:08:05.5171330+02:00" endTime="2025-08-29T15:08:05.5382580+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bc85d5f2-c8a5-498d-9647-85bbc01c2ffc" />
+    <UnitTestResult executionId="64c307d6-35f2-4940-8d62-57c187206cd3" testId="1e46bb75-37a7-94c7-775f-99cfa820150d" testName="tests.UnitCalculateCalories.TestCalculateCaloriesSynonymsFoods" computerName="MBP-von-Erlend" duration="00:00:00.0280642" startTime="2025-08-29T15:08:05.5567780+02:00" endTime="2025-08-29T15:08:05.5848910+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="64c307d6-35f2-4940-8d62-57c187206cd3" />
+    <UnitTestResult executionId="7e4557f1-370d-48f0-b8d7-0cfb6ae4b0d1" testId="252a700f-8019-4208-367b-5066a5ae6d8d" testName="tests.UnitCalculateValidation.TestIngredientOptionReturnsError" computerName="MBP-von-Erlend" duration="00:00:00.0103380" startTime="2025-08-29T15:08:05.5371840+02:00" endTime="2025-08-29T15:08:05.5475720+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7e4557f1-370d-48f0-b8d7-0cfb6ae4b0d1" />
+    <UnitTestResult executionId="44adfd3c-ce8c-4fa7-ae63-9bb7f45646db" testId="125c1589-e5f8-bcbd-70f0-122f5e6ac881" testName="tests.UnitCalculateValidation.TestIngredientInvalidFormatReturnsError" computerName="MBP-von-Erlend" duration="00:00:01.3253006" startTime="2025-08-29T15:08:04.1629260+02:00" endTime="2025-08-29T15:08:05.4992740+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="44adfd3c-ce8c-4fa7-ae63-9bb7f45646db" />
+    <UnitTestResult executionId="aeb56f75-7459-4d0f-b282-f86ac20c6149" testId="e0566964-445e-0c1a-1c20-5a6d9eea53cb" testName="tests.UnitFoodItemList.TestFoodItemsSeachPagination" computerName="MBP-von-Erlend" duration="00:00:00.0629536" startTime="2025-08-29T15:08:05.5228730+02:00" endTime="2025-08-29T15:08:05.5858750+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aeb56f75-7459-4d0f-b282-f86ac20c6149" />
+    <UnitTestResult executionId="9a192e9b-59ab-4bb8-88ad-8a695cb63bac" testId="85396bb9-4fb3-e157-906c-646fdeaf26c8" testName="tests.UnitFoodItemList.TestFoodItemsSeachNoResults" computerName="MBP-von-Erlend" duration="00:00:00.0149646" startTime="2025-08-29T15:08:05.5866760+02:00" endTime="2025-08-29T15:08:05.6017010+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9a192e9b-59ab-4bb8-88ad-8a695cb63bac" />
+    <UnitTestResult executionId="0af9e2c7-9127-410a-9b8c-489170304016" testId="960f2cfc-d250-d407-5c1c-58e270558ca7" testName="tests.UnitCalculateValidation.TestNonexistingIngredientReturnsError" computerName="MBP-von-Erlend" duration="00:00:00.0062999" startTime="2025-08-29T15:08:05.5636840+02:00" endTime="2025-08-29T15:08:05.5700380+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0af9e2c7-9127-410a-9b8c-489170304016" />
+    <UnitTestResult executionId="e04ac22a-32cf-4190-8516-9b2c08cc5487" testId="a51ba8a6-106b-8b0a-d843-19073ace0b39" testName="tests.UnitCalculateCalories.TestCalculateCaloriesSynonymsUnits" computerName="MBP-von-Erlend" duration="00:00:01.3465088" startTime="2025-08-29T15:08:04.1629110+02:00" endTime="2025-08-29T15:08:05.5163460+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e04ac22a-32cf-4190-8516-9b2c08cc5487" />
   </Results>
   <TestDefinitions>
-    <UnitTest name="tests.UnitCalculateValidation.TestIngredientAmountRangeReturnsError" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="f7ff3589-cbcd-6fb8-33f3-2f93e909b05c">
-      <Execution id="9252ad71-d02b-440b-9598-ce79b2c8aa44" />
-      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitCalculateValidation" name="TestIngredientAmountRangeReturnsError" />
-    </UnitTest>
-    <UnitTest name="tests.UnitFoodItemList.TestFoodItemsSeachPagination" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="e0566964-445e-0c1a-1c20-5a6d9eea53cb">
-      <Execution id="48c1ef10-9f24-4abb-a959-697c56269cb2" />
-      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitFoodItemList" name="TestFoodItemsSeachPagination" />
-    </UnitTest>
-    <UnitTest name="tests.UnitCalculateValidation.TestNonexistingIngredientReturnsError" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="960f2cfc-d250-d407-5c1c-58e270558ca7">
-      <Execution id="1e821d9e-17e5-4df1-a7a1-7d4139a250b0" />
-      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitCalculateValidation" name="TestNonexistingIngredientReturnsError" />
-    </UnitTest>
-    <UnitTest name="tests.UnitCalculateCalories.TestCalculateCaloriesSynonymsUnits" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="a51ba8a6-106b-8b0a-d843-19073ace0b39">
-      <Execution id="e94c3364-b840-4354-814d-aa969c030386" />
-      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitCalculateCalories" name="TestCalculateCaloriesSynonymsUnits" />
-    </UnitTest>
-    <UnitTest name="tests.UnitCalculateCalories.TestCalculateCaloriesNoUnit" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="85944d65-c45b-7f68-f3fe-c15f18418bd9">
-      <Execution id="2b1d6bb6-6ddc-4b9d-a25c-aa716f0805d7" />
-      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitCalculateCalories" name="TestCalculateCaloriesNoUnit" />
-    </UnitTest>
-    <UnitTest name="tests.UnitCalculateCalories.TestCalculateCalories" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="0ec6af1e-cdd8-beff-7a83-30926684b22d">
-      <Execution id="024e14f5-f4db-4709-8e3e-2caf3abe532b" />
-      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitCalculateCalories" name="TestCalculateCalories" />
-    </UnitTest>
-    <UnitTest name="tests.UnitCalculateCalories.TestCalculateCaloriesSynonymsFoods" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="1e46bb75-37a7-94c7-775f-99cfa820150d">
-      <Execution id="ba2e4776-5e6f-44a2-9d7f-0e1b3144be4a" />
-      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitCalculateCalories" name="TestCalculateCaloriesSynonymsFoods" />
-    </UnitTest>
-    <UnitTest name="tests.UnitCalculateValidation.TestIngredientInvalidFormatReturnsError" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="125c1589-e5f8-bcbd-70f0-122f5e6ac881">
-      <Execution id="59a8a6fe-3cb7-4e17-991a-ec27edeaa7a0" />
-      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitCalculateValidation" name="TestIngredientInvalidFormatReturnsError" />
-    </UnitTest>
-    <UnitTest name="tests.UnitCalculateCalories.TestCalculateCaloriesNoSpaceAfterUnit" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="43d30249-834b-0958-c3e4-b2d6c57c6cb8">
-      <Execution id="c7c76b77-d259-4625-adee-08334899af95" />
-      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitCalculateCalories" name="TestCalculateCaloriesNoSpaceAfterUnit" />
-    </UnitTest>
-    <UnitTest name="tests.UnitFoodItemList.TestFoodItemsSeachNoResults" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="85396bb9-4fb3-e157-906c-646fdeaf26c8">
-      <Execution id="06369fc6-e86a-4924-bb82-55173a8f4b1b" />
-      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitFoodItemList" name="TestFoodItemsSeachNoResults" />
-    </UnitTest>
-    <UnitTest name="tests.UnitCalculateValidation.TestOptionalIngredientReturnsError" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="0104c214-814a-ebce-d741-ec7bd6a1a6c3">
-      <Execution id="1c9dc591-3977-4597-a396-6ac5f017136d" />
-      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitCalculateValidation" name="TestOptionalIngredientReturnsError" />
-    </UnitTest>
     <UnitTest name="tests.UnitCalculateValidation.TestCorrectFormatReturnsNoError" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="a97ae475-b70c-9e7b-5e73-6de8c325a784">
-      <Execution id="30f4fc8a-d72a-4903-9a20-88eb793c0e55" />
+      <Execution id="dc4cb4a1-f8c7-4216-8c02-ac63ba58390d" />
       <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitCalculateValidation" name="TestCorrectFormatReturnsNoError" />
     </UnitTest>
+    <UnitTest name="tests.UnitCalculateCalories.TestCalculateCaloriesSynonymsFoods" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="1e46bb75-37a7-94c7-775f-99cfa820150d">
+      <Execution id="64c307d6-35f2-4940-8d62-57c187206cd3" />
+      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitCalculateCalories" name="TestCalculateCaloriesSynonymsFoods" />
+    </UnitTest>
+    <UnitTest name="tests.UnitFoodItemList.TestFoodItemsSearchFailure" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="9b642c7b-1947-138e-7712-f0d1c23d8555">
+      <Execution id="c19ab83a-3c00-4f5e-99b8-0f2d3eaabb9c" />
+      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitFoodItemList" name="TestFoodItemsSearchFailure" />
+    </UnitTest>
+    <UnitTest name="tests.UnitCalculateCalories.TestCalculateCaloriesNoSpaceAfterUnit" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="43d30249-834b-0958-c3e4-b2d6c57c6cb8">
+      <Execution id="1b8f8784-2f7a-4d93-8cbe-63940ffbbb91" />
+      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitCalculateCalories" name="TestCalculateCaloriesNoSpaceAfterUnit" />
+    </UnitTest>
+    <UnitTest name="tests.UnitCalculateValidation.TestIngredientInvalidFormatReturnsError" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="125c1589-e5f8-bcbd-70f0-122f5e6ac881">
+      <Execution id="44adfd3c-ce8c-4fa7-ae63-9bb7f45646db" />
+      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitCalculateValidation" name="TestIngredientInvalidFormatReturnsError" />
+    </UnitTest>
+    <UnitTest name="tests.UnitCalculateValidation.TestNonexistingIngredientReturnsError" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="960f2cfc-d250-d407-5c1c-58e270558ca7">
+      <Execution id="0af9e2c7-9127-410a-9b8c-489170304016" />
+      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitCalculateValidation" name="TestNonexistingIngredientReturnsError" />
+    </UnitTest>
     <UnitTest name="tests.UnitFoodItemList.TestFoodItemsSearch" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="a39a31d8-da7c-e742-4a96-41db26604d97">
-      <Execution id="ab86ae07-1d7b-42c6-a578-006e433ee7b7" />
+      <Execution id="eb079578-0a53-4f99-be50-e1b78974c2c2" />
       <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitFoodItemList" name="TestFoodItemsSearch" />
     </UnitTest>
-    <UnitTest name="tests.UnitCalculateValidation.TestIngredientInaccurateUnit" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="3b9c4a8c-c8c3-8316-e230-de3ea1034dd7">
-      <Execution id="91c5d716-0423-47dc-a9ff-a8facf1ff0fa" />
-      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitCalculateValidation" name="TestIngredientInaccurateUnit" />
+    <UnitTest name="tests.UnitCalculateValidation.TestIngredientOptionReturnsError" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="252a700f-8019-4208-367b-5066a5ae6d8d">
+      <Execution id="7e4557f1-370d-48f0-b8d7-0cfb6ae4b0d1" />
+      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitCalculateValidation" name="TestIngredientOptionReturnsError" />
     </UnitTest>
     <UnitTest name="tests.UnitCalculateValidation.TestIngredientInvalidAmountFormatReturnsError" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="52ce9d00-4c0f-e9d7-5774-db2c67cd0fbf">
-      <Execution id="81e620a7-f9e0-45c0-b3e7-b3b6c2161565" />
+      <Execution id="52738456-93f7-4042-9b98-b9953bd37277" />
       <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitCalculateValidation" name="TestIngredientInvalidAmountFormatReturnsError" />
     </UnitTest>
-    <UnitTest name="tests.UnitCalculateValidation.TestIngredientOptionReturnsError" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="252a700f-8019-4208-367b-5066a5ae6d8d">
-      <Execution id="90f9911c-7c3a-4878-80d4-7e7e2bf38db6" />
-      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitCalculateValidation" name="TestIngredientOptionReturnsError" />
+    <UnitTest name="tests.UnitCalculateValidation.TestOptionalIngredientReturnsError" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="0104c214-814a-ebce-d741-ec7bd6a1a6c3">
+      <Execution id="3611fc81-fdcf-4348-ace2-d9b9bb4fb798" />
+      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitCalculateValidation" name="TestOptionalIngredientReturnsError" />
+    </UnitTest>
+    <UnitTest name="tests.UnitFoodItemList.TestFoodItemsSeachPagination" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="e0566964-445e-0c1a-1c20-5a6d9eea53cb">
+      <Execution id="aeb56f75-7459-4d0f-b282-f86ac20c6149" />
+      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitFoodItemList" name="TestFoodItemsSeachPagination" />
+    </UnitTest>
+    <UnitTest name="tests.UnitCalculateCalories.TestCalculateCaloriesNoUnit" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="85944d65-c45b-7f68-f3fe-c15f18418bd9">
+      <Execution id="fd7fedbe-06d8-403c-bcd8-1c3ce58a6c7f" />
+      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitCalculateCalories" name="TestCalculateCaloriesNoUnit" />
+    </UnitTest>
+    <UnitTest name="tests.UnitCalculateCalories.TestCalculateCaloriesSynonymsUnits" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="a51ba8a6-106b-8b0a-d843-19073ace0b39">
+      <Execution id="e04ac22a-32cf-4190-8516-9b2c08cc5487" />
+      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitCalculateCalories" name="TestCalculateCaloriesSynonymsUnits" />
+    </UnitTest>
+    <UnitTest name="tests.UnitFoodItemList.TestFoodItemsSeachNoResults" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="85396bb9-4fb3-e157-906c-646fdeaf26c8">
+      <Execution id="9a192e9b-59ab-4bb8-88ad-8a695cb63bac" />
+      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitFoodItemList" name="TestFoodItemsSeachNoResults" />
+    </UnitTest>
+    <UnitTest name="tests.UnitCalculateValidation.TestIngredientAmountRangeReturnsError" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="f7ff3589-cbcd-6fb8-33f3-2f93e909b05c">
+      <Execution id="2945b6c1-e777-465e-aebe-ca64c10194c7" />
+      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitCalculateValidation" name="TestIngredientAmountRangeReturnsError" />
+    </UnitTest>
+    <UnitTest name="tests.UnitCalculateCalories.TestCalculateCalories" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="0ec6af1e-cdd8-beff-7a83-30926684b22d">
+      <Execution id="bc85d5f2-c8a5-498d-9647-85bbc01c2ffc" />
+      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitCalculateCalories" name="TestCalculateCalories" />
+    </UnitTest>
+    <UnitTest name="tests.UnitCalculateValidation.TestIngredientInaccurateUnit" storage="/users/erlend/documents/calcalc/calcalc/testproject/tests/bin/debug/net9.0/tests.dll" id="3b9c4a8c-c8c3-8316-e230-de3ea1034dd7">
+      <Execution id="37ed87ca-e4a7-4294-bb9a-3f550eb39300" />
+      <TestMethod codeBase="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/bin/Debug/net9.0/tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="tests.UnitCalculateValidation" name="TestIngredientInaccurateUnit" />
     </UnitTest>
   </TestDefinitions>
   <TestEntries>
-    <TestEntry testId="1e46bb75-37a7-94c7-775f-99cfa820150d" executionId="ba2e4776-5e6f-44a2-9d7f-0e1b3144be4a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="f7ff3589-cbcd-6fb8-33f3-2f93e909b05c" executionId="9252ad71-d02b-440b-9598-ce79b2c8aa44" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="960f2cfc-d250-d407-5c1c-58e270558ca7" executionId="1e821d9e-17e5-4df1-a7a1-7d4139a250b0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="43d30249-834b-0958-c3e4-b2d6c57c6cb8" executionId="c7c76b77-d259-4625-adee-08334899af95" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="0ec6af1e-cdd8-beff-7a83-30926684b22d" executionId="024e14f5-f4db-4709-8e3e-2caf3abe532b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="e0566964-445e-0c1a-1c20-5a6d9eea53cb" executionId="48c1ef10-9f24-4abb-a959-697c56269cb2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="125c1589-e5f8-bcbd-70f0-122f5e6ac881" executionId="59a8a6fe-3cb7-4e17-991a-ec27edeaa7a0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="85396bb9-4fb3-e157-906c-646fdeaf26c8" executionId="06369fc6-e86a-4924-bb82-55173a8f4b1b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="252a700f-8019-4208-367b-5066a5ae6d8d" executionId="90f9911c-7c3a-4878-80d4-7e7e2bf38db6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="52ce9d00-4c0f-e9d7-5774-db2c67cd0fbf" executionId="81e620a7-f9e0-45c0-b3e7-b3b6c2161565" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="a97ae475-b70c-9e7b-5e73-6de8c325a784" executionId="30f4fc8a-d72a-4903-9a20-88eb793c0e55" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="3b9c4a8c-c8c3-8316-e230-de3ea1034dd7" executionId="91c5d716-0423-47dc-a9ff-a8facf1ff0fa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="85944d65-c45b-7f68-f3fe-c15f18418bd9" executionId="2b1d6bb6-6ddc-4b9d-a25c-aa716f0805d7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="0104c214-814a-ebce-d741-ec7bd6a1a6c3" executionId="1c9dc591-3977-4597-a396-6ac5f017136d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="a39a31d8-da7c-e742-4a96-41db26604d97" executionId="ab86ae07-1d7b-42c6-a578-006e433ee7b7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="a51ba8a6-106b-8b0a-d843-19073ace0b39" executionId="e94c3364-b840-4354-814d-aa969c030386" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f7ff3589-cbcd-6fb8-33f3-2f93e909b05c" executionId="2945b6c1-e777-465e-aebe-ca64c10194c7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0104c214-814a-ebce-d741-ec7bd6a1a6c3" executionId="3611fc81-fdcf-4348-ace2-d9b9bb4fb798" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3b9c4a8c-c8c3-8316-e230-de3ea1034dd7" executionId="37ed87ca-e4a7-4294-bb9a-3f550eb39300" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="43d30249-834b-0958-c3e4-b2d6c57c6cb8" executionId="1b8f8784-2f7a-4d93-8cbe-63940ffbbb91" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="52ce9d00-4c0f-e9d7-5774-db2c67cd0fbf" executionId="52738456-93f7-4042-9b98-b9953bd37277" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9b642c7b-1947-138e-7712-f0d1c23d8555" executionId="c19ab83a-3c00-4f5e-99b8-0f2d3eaabb9c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a97ae475-b70c-9e7b-5e73-6de8c325a784" executionId="dc4cb4a1-f8c7-4216-8c02-ac63ba58390d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a39a31d8-da7c-e742-4a96-41db26604d97" executionId="eb079578-0a53-4f99-be50-e1b78974c2c2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="85944d65-c45b-7f68-f3fe-c15f18418bd9" executionId="fd7fedbe-06d8-403c-bcd8-1c3ce58a6c7f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0ec6af1e-cdd8-beff-7a83-30926684b22d" executionId="bc85d5f2-c8a5-498d-9647-85bbc01c2ffc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1e46bb75-37a7-94c7-775f-99cfa820150d" executionId="64c307d6-35f2-4940-8d62-57c187206cd3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="252a700f-8019-4208-367b-5066a5ae6d8d" executionId="7e4557f1-370d-48f0-b8d7-0cfb6ae4b0d1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="125c1589-e5f8-bcbd-70f0-122f5e6ac881" executionId="44adfd3c-ce8c-4fa7-ae63-9bb7f45646db" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e0566964-445e-0c1a-1c20-5a6d9eea53cb" executionId="aeb56f75-7459-4d0f-b282-f86ac20c6149" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="85396bb9-4fb3-e157-906c-646fdeaf26c8" executionId="9a192e9b-59ab-4bb8-88ad-8a695cb63bac" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="960f2cfc-d250-d407-5c1c-58e270558ca7" executionId="0af9e2c7-9127-410a-9b8c-489170304016" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a51ba8a6-106b-8b0a-d843-19073ace0b39" executionId="e04ac22a-32cf-4190-8516-9b2c08cc5487" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
   </TestEntries>
   <TestLists>
     <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
     <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
   </TestLists>
-  <ResultSummary outcome="Completed">
-    <Counters total="16" executed="16" passed="16" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  <ResultSummary outcome="Failed">
+    <Counters total="17" executed="17" passed="16" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
     <Output>
       <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.2+a583452f9b (64-bit .NET 9.0.7)
-[xUnit.net 00:00:00.76]   Discovering: tests
-[xUnit.net 00:00:01.30]   Discovered:  tests
-[xUnit.net 00:00:01.86]   Starting:    tests
-[xUnit.net 00:00:03.20]   Finished:    tests
+[xUnit.net 00:00:01.22]   Discovering: tests
+[xUnit.net 00:00:01.78]   Discovered:  tests
+[xUnit.net 00:00:02.63]   Starting:    tests
+[xUnit.net 00:00:04.20]       Assert.Empty() Failure: Collection was not empty
+[xUnit.net 00:00:04.20]       Collection: [FoodItem { Calories = 100, Id = 1, Name = "Hvetemel", Synonyms = [], Units = [], ··· }]
+[xUnit.net 00:00:04.20]       Stack Trace:
+[xUnit.net 00:00:04.20]         /Users/erlend/Documents/calcalc/calcalc/TestProject/tests/UnitFoodItemList.cs(68,0): at tests.UnitFoodItemList.TestFoodItemsSearchFailure()
+[xUnit.net 00:00:04.20]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:04.21]   Finished:    tests
 </StdOut>
     </Output>
+    <RunInfos>
+      <RunInfo computerName="MBP-von-Erlend" outcome="Error" timestamp="2025-08-29T15:08:05.6554280+02:00">
+        <Text>[xUnit.net 00:00:04.20]     tests.UnitFoodItemList.TestFoodItemsSearchFailure [FAIL]</Text>
+      </RunInfo>
+    </RunInfos>
   </ResultSummary>
 </TestRun>

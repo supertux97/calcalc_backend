@@ -1607,3 +1607,4 @@
 /Users/erlend/Documents/calcalc/calcalc/ApiProject/obj/Debug/net9.0/calcalc.pdb
 /Users/erlend/Documents/calcalc/calcalc/ApiProject/obj/Debug/net9.0/calcalc.genruntimeconfig.cache
 /Users/erlend/Documents/calcalc/calcalc/ApiProject/obj/Debug/net9.0/ref/calcalc.dll
+/Users/erlend/Documents/calcalc/calcalc/ApiProject/obj/Debug/net9.0/calcalc.sourcelink.json

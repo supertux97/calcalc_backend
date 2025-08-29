@@ -4,31 +4,6 @@
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003APrimaryKeyAttribute_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003F9bae373ca8f2468e5fea56a8a215b4d02295ae453c599290d0e1be2dd8679453_003FPrimaryKeyAttribute_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003ASelectListItem_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003Fcc62364a2aeba5ac3bffd88882924585b2dfa3fde6aa5b5be373c35eefe50eb_003FSelectListItem_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AUserSecretsConfigurationExtensions_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003F807a7fbe3c562c321aeba61c123987fe2c45828c2a8b8d0bb87bef5ac4cbeaa_003FUserSecretsConfigurationExtensions_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7129569c_002D2476_002D4ec9_002D90d5_002D1c6e153b040d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;xUnit::0AD4C04B-CF78-4F7B-80FF-84D7160E2BAD::net8.0::tests.UnitTest1.Test1&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
-&lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=762ef70b_002Db2b1_002D4aa9_002Db845_002D03074369179f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestResults2.trx" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;Test&gt;
-    &lt;TestId&gt;TestProvider::/Users/erlend/Documents/calcalc/calcalc/ApiProject::::762ef70b-b2b1-4aa9-b845-03074369179ftests.UnitCalculateCaloriesUnitCalculateCalories&lt;/TestId&gt;
-    &lt;TestId&gt;TestProvider::/Users/erlend/Documents/calcalc/calcalc/ApiProject::::762ef70b-b2b1-4aa9-b845-03074369179ftests.UnitCalculateCaloriestests.UnitCalculateCalories.TestCalculateCaloriesSynonymsFoods&lt;/TestId&gt;
-    &lt;TestId&gt;TestProvider::/Users/erlend/Documents/calcalc/calcalc/ApiProject::::762ef70b-b2b1-4aa9-b845-03074369179ftests.UnitCalculateValidationUnitCalculateValidation&lt;/TestId&gt;
-    &lt;TestId&gt;TestProvider::/Users/erlend/Documents/calcalc/calcalc/ApiProject::::762ef70b-b2b1-4aa9-b845-03074369179ftests.UnitCalculateValidationtests.UnitCalculateValidation.TestIngredientAmountRangeReturnsError&lt;/TestId&gt;
-    &lt;TestId&gt;TestProvider::/Users/erlend/Documents/calcalc/calcalc/ApiProject::::762ef70b-b2b1-4aa9-b845-03074369179ftests.UnitCalculateValidationtests.UnitCalculateValidation.TestNonexistingIngredientReturnsError&lt;/TestId&gt;
-    &lt;TestId&gt;TestProvider::/Users/erlend/Documents/calcalc/calcalc/ApiProject::::762ef70b-b2b1-4aa9-b845-03074369179ftests.UnitCalculateCaloriestests.UnitCalculateCalories.TestCalculateCaloriesNoSpaceAfterUnit&lt;/TestId&gt;
-    &lt;TestId&gt;TestProvider::/Users/erlend/Documents/calcalc/calcalc/ApiProject::::762ef70b-b2b1-4aa9-b845-03074369179ftests.UnitCalculateCaloriestests.UnitCalculateCalories.TestCalculateCalories&lt;/TestId&gt;
-    &lt;TestId&gt;TestProvider::/Users/erlend/Documents/calcalc/calcalc/ApiProject::::762ef70b-b2b1-4aa9-b845-03074369179ftests.UnitFoodItemListUnitFoodItemList&lt;/TestId&gt;
-    &lt;TestId&gt;TestProvider::/Users/erlend/Documents/calcalc/calcalc/ApiProject::::762ef70b-b2b1-4aa9-b845-03074369179ftests.UnitFoodItemListtests.UnitFoodItemList.TestFoodItemsSeachPagination&lt;/TestId&gt;
-    &lt;TestId&gt;TestProvider::/Users/erlend/Documents/calcalc/calcalc/ApiProject::::762ef70b-b2b1-4aa9-b845-03074369179ftests.UnitCalculateValidationtests.UnitCalculateValidation.TestIngredientInvalidFormatReturnsError&lt;/TestId&gt;
-    &lt;TestId&gt;TestProvider::/Users/erlend/Documents/calcalc/calcalc/ApiProject::::762ef70b-b2b1-4aa9-b845-03074369179ftests.UnitFoodItemListtests.UnitFoodItemList.TestFoodItemsSeachNoResults&lt;/TestId&gt;
-    &lt;TestId&gt;TestProvider::/Users/erlend/Documents/calcalc/calcalc/ApiProject::::762ef70b-b2b1-4aa9-b845-03074369179ftests.UnitCalculateValidationtests.UnitCalculateValidation.TestIngredientOptionReturnsError&lt;/TestId&gt;
-    &lt;TestId&gt;TestProvider::/Users/erlend/Documents/calcalc/calcalc/ApiProject::::762ef70b-b2b1-4aa9-b845-03074369179ftests.UnitCalculateValidationtests.UnitCalculateValidation.TestIngredientInvalidAmountFormatReturnsError&lt;/TestId&gt;
-    &lt;TestId&gt;TestProvider::/Users/erlend/Documents/calcalc/calcalc/ApiProject::::762ef70b-b2b1-4aa9-b845-03074369179ftests.UnitCalculateValidationtests.UnitCalculateValidation.TestCorrectFormatReturnsNoError&lt;/TestId&gt;
-    &lt;TestId&gt;TestProvider::/Users/erlend/Documents/calcalc/calcalc/ApiProject::::762ef70b-b2b1-4aa9-b845-03074369179ftests.UnitCalculateValidationtests.UnitCalculateValidation.TestIngredientInaccurateUnit&lt;/TestId&gt;
-    &lt;TestId&gt;TestProvider::/Users/erlend/Documents/calcalc/calcalc/ApiProject::::762ef70b-b2b1-4aa9-b845-03074369179ftests.UnitCalculateCaloriestests.UnitCalculateCalories.TestCalculateCaloriesNoUnit&lt;/TestId&gt;
-    &lt;TestId&gt;TestProvider::/Users/erlend/Documents/calcalc/calcalc/ApiProject::::762ef70b-b2b1-4aa9-b845-03074369179ftests.UnitCalculateValidationtests.UnitCalculateValidation.TestOptionalIngredientReturnsError&lt;/TestId&gt;
-    &lt;TestId&gt;TestProvider::/Users/erlend/Documents/calcalc/calcalc/ApiProject::::762ef70b-b2b1-4aa9-b845-03074369179ftests.UnitFoodItemListtests.UnitFoodItemList.TestFoodItemsSearch&lt;/TestId&gt;
-    &lt;TestId&gt;TestProvider::/Users/erlend/Documents/calcalc/calcalc/ApiProject::::762ef70b-b2b1-4aa9-b845-03074369179ftests.UnitCalculateCaloriestests.UnitCalculateCalories.TestCalculateCaloriesSynonymsUnits&lt;/TestId&gt;
-  &lt;/Test&gt;
-&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
+	
+	
+	</wpf:ResourceDictionary>

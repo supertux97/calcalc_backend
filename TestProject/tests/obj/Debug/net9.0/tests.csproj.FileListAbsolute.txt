@@ -873,3 +873,4 @@
 /Users/erlend/Documents/calcalc/calcalc/TestProject/tests/obj/Debug/net9.0/tests.csproj.Up2Date
 /Users/erlend/Documents/calcalc/calcalc/TestProject/tests/obj/Debug/net9.0/tests.genruntimeconfig.cache
 /Users/erlend/Documents/calcalc/calcalc/TestProject/tests/obj/Debug/net9.0/ref/tests.dll
+/Users/erlend/Documents/calcalc/calcalc/TestProject/tests/obj/Debug/net9.0/tests.sourcelink.json
