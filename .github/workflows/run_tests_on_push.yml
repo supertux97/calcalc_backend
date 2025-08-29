@@ -17,6 +17,7 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 9.0.x
+	cache: true
     - name: App - Restore dependencies
       run: dotnet restore ./ApiProject/calcalc.sln
     - name: App - Build
@@ -27,5 +28,5 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: TestResults
-        path: ./TestProject/TestResults.trx
+        path: ./TestProject/tests/TestResults/TestResults.trx 
 
