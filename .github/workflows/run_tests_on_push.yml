@@ -36,5 +36,21 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: TestResults
-        path: ./TestProject/tests/TestResults/TestResults.trx 
+        path: ./TestProject/tests/TestResults/TestResults.trx
+  revert-change:
+    runs-on: ubuntu-latest
+    needs: [ run_tests_job ]  # we need to say the job that sometimes fails is a dependency
+    if: ${{ failure() }}      # because if it fails
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2  # check out the current and prior state
+      - name: "Revert the commit that triggered this run, then push it to main"
+        shell: bash
+        run: |
+          echo "Reverting ${{ github.sha }}"
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git revert --no-edit ${{ github.sha }}
+          git push origin develop
 
