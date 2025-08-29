@@ -2,9 +2,9 @@ name: Run tests on push
 
 
 on:
-  push:
+  pull_request:
     branches:
-    - develop
+    - main
 
 jobs:
   run_tests_job:
