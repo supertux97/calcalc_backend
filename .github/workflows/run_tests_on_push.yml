@@ -28,6 +28,8 @@ jobs:
       run: cat ./TestProject/tests/UnitFoodItemList.cs
     - name: App - Build
       run: dotnet build ./ApiProject/calcalc.sln --no-restore --configuration Release
+    - name: Show number of tests
+      run: dotnet test ./TestProject/tests/tests.csproj --no-build --configuration Release --list-tests --verbosity=quiet --nologo
     - name: Test - Run tests
       run: dotnet test ./TestProject/tests/tests.csproj --no-build --configuration Release --logger "trx;LogFileName=TestResults.trx"
     - name: Upload test result
