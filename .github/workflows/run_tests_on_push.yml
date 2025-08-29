@@ -22,12 +22,14 @@ jobs:
         dotnet-version: 9.0.x
     - name: App - Restore dependencies
       run: dotnet restore ./ApiProject/calcalc.sln
+    - name: Clean the solution
+      run: dotnet clean
     - name: Show
       run: cat ./TestProject/tests/UnitFoodItemList.cs
     - name: App - Build
-      run: dotnet build ./ApiProject/calcalc.sln --no-restore
+      run: dotnet build ./ApiProject/calcalc.sln --no-restore --configuration Release
     - name: Test - Run tests
-      run: dotnet test ./TestProject/tests/tests.csproj --no-build --logger "trx;LogFileName=TestResults.trx"
+      run: dotnet test ./TestProject/tests/tests.csproj --no-build --configuration Release --logger "trx;LogFileName=TestResults.trx"
     - name: Upload test result
       uses: actions/upload-artifact@v4
       with:
