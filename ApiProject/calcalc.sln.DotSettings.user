@@ -9,7 +9,7 @@
     &lt;TestId&gt;xUnit::0AD4C04B-CF78-4F7B-80FF-84D7160E2BAD::net8.0::tests.UnitTest1.Test1&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=762ef70b_002Db2b1_002D4aa9_002Db845_002D03074369179f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestResults.trx" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=762ef70b_002Db2b1_002D4aa9_002Db845_002D03074369179f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestResults2.trx" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;Test&gt;
     &lt;TestId&gt;TestProvider::/Users/erlend/Documents/calcalc/calcalc/ApiProject::::762ef70b-b2b1-4aa9-b845-03074369179ftests.UnitCalculateCaloriesUnitCalculateCalories&lt;/TestId&gt;
     &lt;TestId&gt;TestProvider::/Users/erlend/Documents/calcalc/calcalc/ApiProject::::762ef70b-b2b1-4aa9-b845-03074369179ftests.UnitCalculateCaloriestests.UnitCalculateCalories.TestCalculateCaloriesSynonymsFoods&lt;/TestId&gt;
