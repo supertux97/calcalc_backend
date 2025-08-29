@@ -1,0 +1,80 @@
+@model calcalc.ViewModels.FoodItemCreateViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>FoodItem</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FoodItem.Name" class="control-label"></label>
+                <input asp-for="FoodItem.Name" class="form-control" />
+                <span asp-validation-for="FoodItem.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FoodItem.Calories" class="control-label"></label>
+                <input asp-for="FoodItem.Calories" class="form-control" />
+                <span asp-validation-for="FoodItem.Calories" class="text-danger"></span>
+            </div>
+           
+            <h3>Synonymer</h3>
+            <div id="foodSynonyms"></div>
+            <button type="button" id="addFoodSynonym">Legg til synonym</button>
+            <div asp-validation-for="FoodItem.Synonyms"></div>
+            
+            <h3>Enheter</h3>
+            <div id="foodUnits"></div>
+            <button id="addFoodUnit" type="button">Legg til enhet</button>
+            <div asp-validation-for="FoodItem.Units"></div>
+            <div asp-validation-summary="All"></div>
+            <hr/>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div> 
+        </form>
+    </div>
+    
+
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    
+    <script>
+        var foodSynonymIdx = 0;
+        $("#addFoodSynonym").click(function(){
+            $.get("/FoodItem/FoodSynonym/Create?idx="+foodSynonymIdx).then(function(data){
+                $("#foodSynonyms").append(data);
+                setTimeout(function (){
+                    $("form").removeData("validator").removeData("unobtrusiveValidation");
+                    $.validator.unobtrusive.parse();
+                }, 2000);
+            }).catch(function(data){
+                $("#foodSynonyms").html("Det oppsto en feil");
+            });
+            foodSynonymIdx++;
+        });
+        
+        var foodUnitIdx = 0;
+        $("#addFoodUnit").click(function(){
+            $.get("/FoodItem/FoodHasUnit/Create?idx="+foodUnitIdx).then(function(data){
+                $("#foodUnits").append(data);
+                $("form").removeData("validator").removeData("unobtrusiveValidation");
+                $.validator.unobtrusive.parse("form");
+            }).catch(function(data){
+                $("#foodUnits").html("Det oppsto en feil");
+            });
+            foodUnitIdx++;
+        });
+    </script>
+}

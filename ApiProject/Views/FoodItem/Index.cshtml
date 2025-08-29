@@ -1,0 +1,80 @@
+@using Microsoft.IdentityModel.Tokens
+@model calcalc.ViewModels.FoodItemIndexViewmodel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+@if (!Model.Notification.IsNullOrEmpty())
+{
+    <div class="temp-notification">@Model.Notification</div>
+}
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<form method="get" asp-action="Index" asp-controller="FoodItem">
+    <label asp-for="NameFilterString"></label>
+    <input asp-for="NameFilterString"/>
+    <button type="submit">Filtrer</button>
+</form>
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FoodItems[0].Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FoodItems[0].Calories)
+        </th>
+        <th>@Html.DisplayNameFor(model => model.FoodItems[0].Synonyms)</th>
+        <th>@Html.DisplayNameFor(model => model.FoodItems[0].Units)</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @if (Model.FoodItems.Count == 0)
+    {
+        <p>Ingen matvarer</p>
+    }
+    @foreach (var item in Model.FoodItems)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Calories)
+            </td>
+            <td>@(item.GetSynonymsNamesList())</td>
+            <td>@(item.GetFoodUnitNamesList())</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+@if (Model.HasPreviousPage)
+{
+    <a 
+        asp-route-nameFilterString="@Model.NameFilterString"
+        asp-route-paginationStartAtName="@Model.PrevStartAtName">Forrige side</a>
+}
+@if (Model.HasNextPage)
+{
+    <a 
+        asp-route-nameFilterString="@Model.NameFilterString"
+        asp-route-paginationPrevStartAt="@Model.CurrPageStartAtName" asp-route-paginationStartAtName="@Model.NextPageStartAtName">Neste side</a>
+}
+@section Scripts
+{
+    <script>
+        setTimeout(function(){
+            $(".temp-notification").remove();
+        }, 3000);
+    </script>
+}

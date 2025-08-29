@@ -1,0 +1,37 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=34c5867d_002D5ab8_002D4921_002Db911_002D2e5275a3704a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Session #6" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;And&gt;
+    &lt;Namespace&gt;tests&lt;/Namespace&gt;
+    &lt;Project Location="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests" Presentation="&amp;lt;tests&amp;gt;" /&gt;
+  &lt;/And&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3528c25d_002Dbdef_002D4e40_002Db462_002Db254685e7c1f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Session #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;And&gt;
+    &lt;Namespace&gt;tests&lt;/Namespace&gt;
+    &lt;Project Location="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests" Presentation="&amp;lt;tests&amp;gt;" /&gt;
+  &lt;/And&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4451616d_002Dd9b3_002D4380_002D9e00_002De93c61dc6dd9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Session #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;And&gt;
+    &lt;Namespace&gt;tests&lt;/Namespace&gt;
+    &lt;Project Location="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests" Presentation="&amp;lt;tests&amp;gt;" /&gt;
+  &lt;/And&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5049f4b0_002D0784_002D4b35_002Dacf5_002D436c87d9462b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Session #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;And&gt;
+    &lt;Namespace&gt;tests&lt;/Namespace&gt;
+    &lt;Project Location="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests" Presentation="&amp;lt;tests&amp;gt;" /&gt;
+  &lt;/And&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=62c5944a_002D710c_002D4cb0_002D83fd_002D39c5f0215806/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Session" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;And&gt;
+    &lt;Namespace&gt;tests&lt;/Namespace&gt;
+    &lt;Project Location="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests" Presentation="&amp;lt;tests&amp;gt;" /&gt;
+  &lt;/And&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6a9d935f_002D5157_002D4fd8_002Da17b_002D32871422a87a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Session #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;And&gt;
+    &lt;Namespace&gt;tests&lt;/Namespace&gt;
+    &lt;Project Location="/Users/erlend/Documents/calcalc/calcalc/TestProject/tests" Presentation="&amp;lt;tests&amp;gt;" /&gt;
+  &lt;/And&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

@@ -1,0 +1,13 @@
+@using Microsoft.EntityFrameworkCore.Metadata.Internal
+@model calcalc.ViewModels.FoodHasUnitCreateViewmodel
+@{
+    int idx = Model.UnitIdx; 
+}
+<select asp-for="FoodItem.Units[idx].FoodUnitId" asp-items="@Model.FoodUnitsListItems">
+    <option value="">@Model.ChooseUnitUIStr</option>
+</select>
+<div asp-validation-for="FoodItem.Units[idx].FoodUnitId"></div>
+
+<label asp-for="FoodItem.Units[idx].GramsPerUnit"></label>
+<input asp-for="FoodItem.Units[idx].GramsPerUnit"></input>
+<span asp-validation-for="FoodItem.Units[idx].GramsPerUnit"></span>

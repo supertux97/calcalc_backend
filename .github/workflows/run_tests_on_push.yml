@@ -1,0 +1,31 @@
+name: Run tests on push
+
+
+on:
+  push:
+    branches:
+    - develop
+
+jobs:
+  run_tests_job:
+    runs-on: ubuntu-latest
+    name: Run tests
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v4
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+    - name: App - Restore dependencies
+      run: dotnet restore ./ApiProject/ApiProject/calcalc.sln
+    - name: App - Build
+      run: dotnet build ./ApiProject/ApiProject/calcalc.sln --no-restore
+    - name: Test - Run tests
+      run: dotnet test ./TestProject/tests/tests.csproj --no-build --logger "trx;LogFileName=TestResults.trx"
+    - name: Upload test result
+      uses: actions/upload-artifact@v4
+      with:
+        name: TestResults
+        path: ./src/Test/TestResults/TestResults.trx
+

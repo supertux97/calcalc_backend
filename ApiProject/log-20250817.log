@@ -1,0 +1,51 @@
+2025-08-17 00:16:59.379 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-17 00:16:59.383 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-17 00:16:59.383 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-17 00:16:59.383 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-17 00:16:59.387 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-17 00:16:59.389 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-17 00:16:59.389 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-17 00:16:59.407 +02:00 [ERR] Hangfire.AutomaticRetryAttribute Failed to process the job '1626': an exception occurred.
+System.InvalidOperationException: The instance of entity type 'FoodHasUnit' cannot be tracked because another instance with the same key value for {'FoodItemId', 'FoodUnitId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.NavigationFixer.NavigationCollectionChanged(InternalEntityEntry entry, INavigationBase navigationBase, IEnumerable`1 added, IEnumerable`1 removed)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.DetectNavigationChange(InternalEntityEntry entry, INavigationBase navigationBase)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.LocalDetectChanges(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.DetectChanges(IStateManager stateManager)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at calcalc.BackgroundJobs.MattilsynetSync.DoSync() in /Users/erlend/Documents/calcalc/calcalc/BackgroundJobs/MattilsynetSync.cs:line 112
+   at calcalc.BackgroundJobs.MattilsynetSync.DoSync() in /Users/erlend/Documents/calcalc/calcalc/BackgroundJobs/MattilsynetSync.cs:line 116
+   at InvokeStub_TaskAwaiter.GetResult(Object, Object, IntPtr*)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2025-08-17 00:17:05.463 +02:00 [ERR] Hangfire.Storage.SQLite.SQLiteDistributedLock Unable to update heartbeat on the resource 'HangFire:job:1626:state-lock'. The resource is not locked or is locked by another owner.
+2025-08-17 17:28:55.468 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-17 17:28:55.481 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-17 17:28:55.481 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-17 17:28:55.482 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-17 17:28:55.880 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-17 17:28:55.889 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-17 17:28:55.890 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-17 17:28:55.923 +02:00 [ERR] Hangfire.AutomaticRetryAttribute Failed to process the job '1627': an exception occurred.
+System.InvalidOperationException: The instance of entity type 'FoodHasUnit' cannot be tracked because another instance with the same key value for {'FoodItemId', 'FoodUnitId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.NavigationFixer.NavigationCollectionChanged(InternalEntityEntry entry, INavigationBase navigationBase, IEnumerable`1 added, IEnumerable`1 removed)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.DetectNavigationChange(InternalEntityEntry entry, INavigationBase navigationBase)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.LocalDetectChanges(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.DetectChanges(IStateManager stateManager)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at calcalc.BackgroundJobs.MattilsynetSync.DoSync() in /Users/erlend/Documents/calcalc/calcalc/BackgroundJobs/MattilsynetSync.cs:line 112
+   at calcalc.BackgroundJobs.MattilsynetSync.DoSync() in /Users/erlend/Documents/calcalc/calcalc/BackgroundJobs/MattilsynetSync.cs:line 116
+   at InvokeStub_TaskAwaiter.GetResult(Object, Object, IntPtr*)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)

@@ -1,0 +1,916 @@
+2025-08-09 00:00:09.043 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:00:09.146 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:00:09.146 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:00:09.147 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:00:09.153 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:00:09.154 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:00:09.154 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:00:09.155 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:00:09.155 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:01:09.191 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:01:09.195 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:01:09.195 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:01:09.199 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:01:09.218 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:01:09.226 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:01:09.230 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:01:09.235 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:01:09.235 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:02:09.266 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:02:09.266 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:02:09.266 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:02:09.266 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:02:09.269 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:02:09.273 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:02:09.273 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:02:09.273 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:02:09.273 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:03:09.316 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:03:09.317 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:03:09.317 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:03:09.317 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:03:09.323 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:03:09.324 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:03:09.324 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:03:09.326 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:03:09.326 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:04:09.367 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:04:09.372 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:04:09.372 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:04:09.372 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:04:09.392 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:04:09.398 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:04:09.398 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:04:09.400 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:04:09.400 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:05:09.496 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:05:09.497 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:05:09.497 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:05:09.498 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:05:09.505 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:05:09.505 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:05:09.505 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:05:09.506 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:05:09.506 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:06:09.556 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:06:09.559 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:06:09.559 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:06:09.560 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:06:09.568 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:06:09.570 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:06:09.571 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:06:09.574 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:06:09.575 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:07:09.617 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:07:09.618 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:07:09.618 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:07:09.619 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:07:09.627 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:07:09.629 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:07:09.630 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:07:09.634 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:07:09.634 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:08:09.687 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:08:09.688 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:08:09.688 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:08:09.688 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:08:09.694 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:08:09.695 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:08:09.695 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:08:09.696 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:08:09.696 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:09:09.730 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:09:09.730 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:09:09.730 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:09:09.730 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:09:09.734 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:09:09.735 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:09:09.735 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:09:09.736 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:09:09.736 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:10:09.768 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:10:09.769 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:10:09.769 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:10:09.769 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:10:09.771 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:10:09.772 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:10:09.772 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:10:09.772 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:10:09.772 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:11:09.795 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:11:09.795 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:11:09.795 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:11:09.795 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:11:09.798 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:11:09.798 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:11:09.798 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:11:09.799 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:11:09.799 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:12:09.833 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:12:09.834 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:12:09.834 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:12:09.834 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:12:09.837 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:12:09.838 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:12:09.839 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:12:09.839 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:12:09.839 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:13:09.881 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:13:09.885 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:13:09.885 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:13:09.885 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:13:09.887 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:13:09.889 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:13:09.889 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:13:09.890 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:13:09.890 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:14:09.921 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:14:09.921 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:14:09.921 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:14:09.921 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:14:09.925 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:14:09.926 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:14:09.926 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:14:09.927 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:14:09.927 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:15:09.972 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:15:09.972 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:15:09.972 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:15:09.972 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:15:09.976 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:15:09.977 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:15:09.977 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:15:09.978 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:15:09.978 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:16:10.016 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:16:10.017 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:16:10.017 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:16:10.017 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:16:10.020 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:16:10.020 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:16:10.020 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:16:10.023 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:16:10.023 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:17:10.068 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:17:10.070 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:17:10.070 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:17:10.070 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:17:10.075 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:17:10.077 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:17:10.077 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:17:10.078 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:17:10.078 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:18:10.126 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:18:10.127 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:18:10.127 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:18:10.127 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:18:10.129 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:18:10.130 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:18:10.130 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:18:10.131 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:18:10.131 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:19:10.162 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:19:10.162 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:19:10.162 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:19:10.162 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:19:10.164 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:19:10.165 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:19:10.165 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:19:10.166 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:19:10.167 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:20:10.197 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:20:10.197 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:20:10.197 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:20:10.197 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:20:10.201 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:20:10.202 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:20:10.202 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:20:10.202 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:20:10.202 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:21:10.226 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:21:10.228 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:21:10.228 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:21:10.229 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:21:10.232 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:21:10.235 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:21:10.235 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:21:10.236 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:21:10.237 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:22:10.250 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:22:10.250 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:22:10.250 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:22:10.250 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:22:10.254 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:22:10.257 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:22:10.257 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:22:10.260 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:22:10.260 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:23:10.267 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:23:10.268 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:23:10.268 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:23:10.268 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:23:10.269 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:23:10.270 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:23:10.270 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:23:10.272 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:23:10.272 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:24:10.307 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:24:10.309 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:24:10.309 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:24:10.309 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:24:10.313 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:24:10.313 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:24:10.314 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:24:10.317 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:24:10.317 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:25:10.364 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:25:10.365 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:25:10.365 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:25:10.365 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:25:10.370 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:25:10.371 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:25:10.371 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:25:10.372 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:25:10.372 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:26:10.407 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:26:10.408 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:26:10.408 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:26:10.408 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:26:10.412 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:26:10.413 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:26:10.413 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:26:10.413 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:26:10.413 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:27:10.444 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:27:10.445 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:27:10.445 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:27:10.445 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:27:10.449 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:27:10.450 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:27:10.450 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:27:10.452 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:27:10.452 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:28:10.479 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:28:10.480 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:28:10.480 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:28:10.480 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:28:10.481 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:28:10.482 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:28:10.482 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:28:10.483 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:28:10.483 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:29:10.511 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:29:10.513 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:29:10.513 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:29:10.513 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:29:10.515 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:29:10.516 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:29:10.516 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:29:10.516 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:29:10.516 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:30:10.540 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:30:10.543 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:30:10.543 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:30:10.543 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:30:10.549 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:30:10.551 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:30:10.551 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:30:10.552 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:30:10.552 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:31:10.590 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:31:10.591 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:31:10.592 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:31:10.592 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:31:10.593 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:31:10.595 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:31:10.595 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:31:10.596 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:31:10.596 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:32:10.636 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:32:10.636 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:32:10.636 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:32:10.636 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:32:10.642 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:32:10.643 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:32:10.643 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:32:10.645 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:32:10.646 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:33:10.680 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:33:10.681 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:33:10.681 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:33:10.681 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:33:10.686 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:33:10.687 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:33:10.687 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:33:10.688 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:33:10.688 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:34:10.726 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:34:10.728 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:34:10.728 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:34:10.728 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:34:10.734 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:34:10.736 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:34:10.736 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:34:10.737 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:34:10.737 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:35:10.779 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:35:10.781 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:35:10.781 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:35:10.781 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:35:10.787 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:35:10.790 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:35:10.790 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:35:10.791 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:35:10.791 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:36:10.821 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:36:10.823 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:36:10.823 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:36:10.823 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:36:10.825 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:36:10.827 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:36:10.827 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:36:10.830 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:36:10.830 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:37:10.863 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:37:10.864 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:37:10.864 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:37:10.864 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:37:10.868 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:37:10.870 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:37:10.870 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:37:10.873 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:37:10.873 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:38:10.905 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:38:10.906 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:38:10.906 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:38:10.906 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:38:10.910 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:38:10.911 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:38:10.911 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:38:10.912 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:38:10.913 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:39:10.937 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:39:10.937 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:39:10.937 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:39:10.937 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:39:10.943 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:39:10.944 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:39:10.944 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:39:10.945 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:39:10.945 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:40:10.986 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:40:10.988 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:40:10.988 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:40:10.988 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:40:10.992 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:40:10.993 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:40:10.993 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:40:10.995 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:40:10.995 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:41:11.045 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:41:11.046 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:41:11.046 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:41:11.046 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:41:11.054 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:41:11.058 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:41:11.059 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:41:11.061 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:41:11.061 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:42:11.092 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:42:11.093 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:42:11.093 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:42:11.093 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:42:11.100 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:42:11.103 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:42:11.104 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:42:11.106 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:42:11.106 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:43:11.163 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:43:11.165 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:43:11.165 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:43:11.165 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:43:11.169 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:43:11.170 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:43:11.170 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:43:11.173 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:43:11.173 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:44:11.207 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:44:11.208 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:44:11.208 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:44:11.208 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:44:11.213 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:44:11.215 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:44:11.215 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:44:11.216 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:44:11.216 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:45:11.263 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:45:11.275 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:45:11.275 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:45:11.275 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:45:11.291 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:45:11.295 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:45:11.295 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:45:11.297 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:45:11.297 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:46:11.339 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:46:11.340 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:46:11.340 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:46:11.340 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:46:11.343 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:46:11.345 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:46:11.345 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:46:11.347 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:46:11.347 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:47:11.382 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:47:11.385 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:47:11.385 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:47:11.385 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:47:11.389 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:47:11.390 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:47:11.390 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:47:11.392 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:47:11.392 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:48:11.432 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:48:11.434 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:48:11.434 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:48:11.434 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:48:11.441 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:48:11.443 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:48:11.443 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:48:11.444 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:48:11.444 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:49:11.474 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:49:11.476 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:49:11.476 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:49:11.476 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:49:11.483 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:49:11.484 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:49:11.485 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:49:11.487 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:49:11.487 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:50:11.519 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:50:11.521 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:50:11.521 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:50:11.521 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:50:11.531 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:50:11.533 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:50:11.533 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:50:11.537 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:50:11.537 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:51:11.588 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:51:11.590 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:51:11.590 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:51:11.590 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:51:11.598 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:51:11.600 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:51:11.600 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:51:11.603 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:51:11.603 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:52:11.646 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:52:11.648 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:52:11.649 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:52:11.649 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:52:11.658 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:52:11.659 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:52:11.659 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:52:11.663 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:52:11.663 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:53:11.700 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:53:11.703 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:53:11.703 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:53:11.703 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:53:11.711 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:53:11.713 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:53:11.713 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:53:11.716 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:53:11.716 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:54:11.754 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:54:11.756 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:54:11.757 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:54:11.757 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:54:11.762 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:54:11.762 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:54:11.762 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:54:11.763 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:54:11.763 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:55:11.788 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:55:11.791 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:55:11.791 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:55:11.791 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:55:11.796 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:55:11.798 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:55:11.798 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:55:11.800 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:55:11.800 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:56:11.843 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:56:11.846 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:56:11.846 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:56:11.846 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:56:11.852 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:56:11.854 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:56:11.854 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:56:11.856 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:56:11.856 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:57:11.882 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:57:11.894 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:57:11.894 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:57:11.894 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:57:11.901 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:57:11.901 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:57:11.901 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:57:11.903 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:57:11.903 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:57:31.221 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'AggregatedCounter' table...
+2025-08-09 00:57:31.230 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'AggregatedCounter' table...
+2025-08-09 00:57:31.230 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Counter' table...
+2025-08-09 00:57:31.233 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Counter' table...
+2025-08-09 00:57:31.235 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Job' table...
+2025-08-09 00:57:31.246 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Job' table...
+2025-08-09 00:57:31.246 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'List' table...
+2025-08-09 00:57:31.247 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'List' table...
+2025-08-09 00:57:31.249 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Set' table...
+2025-08-09 00:57:31.251 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Set' table...
+2025-08-09 00:57:31.251 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Hash' table...
+2025-08-09 00:57:31.252 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Hash' table...
+2025-08-09 00:57:31.252 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'State' table...
+2025-08-09 00:57:31.256 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'State' table...
+2025-08-09 00:57:31.256 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'JobParameter' table...
+2025-08-09 00:57:31.257 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'JobParameter' table...
+2025-08-09 00:58:11.944 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:58:11.947 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:58:11.947 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:58:11.947 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:58:11.954 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:58:11.955 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:58:11.956 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:58:11.957 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:58:11.957 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 00:59:11.974 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 00:59:11.976 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 00:59:11.976 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 00:59:11.976 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 00:59:11.981 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 00:59:11.983 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 00:59:11.983 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 00:59:11.985 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 00:59:11.985 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:00:12.008 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:00:12.012 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:00:12.012 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:00:12.012 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:00:12.018 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:00:12.021 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:00:12.021 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:00:12.022 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:00:12.023 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:01:12.056 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:01:12.057 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:01:12.058 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:01:12.058 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:01:12.070 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:01:12.074 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:01:12.074 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:01:12.076 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:01:12.076 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:02:12.108 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:02:12.115 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:02:12.115 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:02:12.115 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:02:12.120 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:02:12.122 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:02:12.122 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:02:12.124 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:02:12.125 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:03:12.172 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:03:12.177 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:03:12.177 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:03:12.177 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:03:12.185 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:03:12.186 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:03:12.186 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:03:12.202 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:03:12.202 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:04:12.252 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:04:12.254 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:04:12.255 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:04:12.255 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:04:12.263 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:04:12.265 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:04:12.265 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:04:12.269 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:04:12.269 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:05:12.308 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:05:12.310 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:05:12.310 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:05:12.310 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:05:12.320 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:05:12.323 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:05:12.323 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:05:12.325 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:05:12.327 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:06:12.366 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:06:12.367 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:06:12.367 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:06:12.367 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:06:12.378 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:06:12.380 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:06:12.380 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:06:12.383 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:06:12.383 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:07:12.425 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:07:12.426 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:07:12.426 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:07:12.426 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:07:12.433 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:07:12.434 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:07:12.434 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:07:12.435 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:07:12.436 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:08:12.484 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:08:12.485 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:08:12.485 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:08:12.485 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:08:12.506 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:08:12.506 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:08:12.506 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:08:12.508 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:08:12.508 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:09:12.550 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:09:12.550 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:09:12.550 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:09:12.550 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:09:12.559 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:09:12.560 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:09:12.560 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:09:12.562 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:09:12.563 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:10:12.607 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:10:12.609 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:10:12.609 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:10:12.609 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:10:12.620 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:10:12.622 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:10:12.622 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:10:12.626 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:10:12.627 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:11:12.668 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:11:12.671 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:11:12.671 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:11:12.671 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:11:12.678 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:11:12.679 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:11:12.679 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:11:12.681 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:11:12.681 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:12:12.716 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:12:12.719 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:12:12.719 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:12:12.719 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:12:12.729 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:12:12.732 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:12:12.732 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:12:12.735 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:12:12.735 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:13:12.793 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:13:12.799 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:13:12.799 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:13:12.799 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:13:12.812 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:13:12.815 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:13:12.816 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:13:12.819 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:13:12.819 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:14:12.859 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:14:12.863 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:14:12.863 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:14:12.864 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:14:12.871 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:14:12.874 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:14:12.874 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:14:12.876 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:14:12.876 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:15:12.914 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:15:12.916 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:15:12.916 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:15:12.916 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:15:12.918 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:15:12.919 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:15:12.919 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:15:12.921 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:15:12.921 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:16:12.962 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:16:12.964 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:16:12.964 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:16:12.964 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:16:12.966 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:16:12.967 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:16:12.967 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:16:12.969 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:16:12.969 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:17:13.018 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:17:13.022 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:17:13.022 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:17:13.022 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:17:13.027 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:17:13.028 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:17:13.028 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:17:13.030 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:17:13.030 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:18:13.065 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:18:13.066 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:18:13.066 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:18:13.066 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:18:13.074 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:18:13.075 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:18:13.075 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:18:13.076 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:18:13.076 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:19:13.097 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:19:13.097 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:19:13.097 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:19:13.097 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:19:13.100 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:19:13.101 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:19:13.101 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:19:13.102 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:19:13.102 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:20:13.118 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:20:13.118 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:20:13.118 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:20:13.118 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:20:13.119 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:20:13.120 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:20:13.120 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:20:13.122 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:20:13.122 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:21:13.142 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:21:13.143 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:21:13.143 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:21:13.143 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:21:13.144 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:21:13.145 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:21:13.145 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:21:13.146 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:21:13.146 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:22:13.166 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:22:13.166 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:22:13.166 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:22:13.166 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:22:13.168 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:22:13.169 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:22:13.169 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:22:13.169 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:22:13.169 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:23:13.187 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:23:13.188 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:23:13.188 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:23:13.188 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:23:13.189 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:23:13.190 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:23:13.190 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:23:13.190 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:23:13.190 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:24:13.209 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:24:13.209 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:24:13.209 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:24:13.210 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:24:13.212 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:24:13.213 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:24:13.213 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:24:13.213 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:24:13.213 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:25:13.231 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:25:13.231 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:25:13.231 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:25:13.231 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:25:13.232 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:25:13.233 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:25:13.233 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:25:13.235 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:25:13.235 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:26:13.251 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:26:13.251 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:26:13.251 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:26:13.251 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:26:13.254 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:26:13.257 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:26:13.257 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:26:13.261 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:26:13.261 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:27:13.286 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:27:13.288 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:27:13.288 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:27:13.288 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:27:13.302 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:27:13.315 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:27:13.316 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:27:13.321 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:27:13.321 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:28:13.350 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:28:13.350 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:28:13.350 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:28:13.350 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:28:13.356 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:28:13.357 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:28:13.357 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:28:13.361 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:28:13.361 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:29:13.384 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:29:13.384 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:29:13.384 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:29:13.385 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:29:13.387 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:29:13.387 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:29:13.387 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:29:13.388 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:29:13.388 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:30:13.417 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:30:13.418 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:30:13.418 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:30:13.418 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:30:13.466 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:30:13.475 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:30:13.475 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:30:13.485 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:30:13.486 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:31:13.535 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:31:13.537 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:31:13.537 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:31:13.537 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:31:13.561 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:31:13.564 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:31:13.564 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:31:13.572 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:31:13.572 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:32:13.603 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:32:13.617 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:32:13.618 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:32:13.618 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:32:13.630 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:32:13.637 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:32:13.637 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:32:13.641 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:32:13.642 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:33:13.681 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:33:13.686 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:33:13.686 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:33:13.686 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:33:13.727 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:33:13.735 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:33:13.736 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:33:13.744 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:33:13.744 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:34:13.808 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:34:13.814 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:34:13.814 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:34:13.814 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:34:13.831 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:34:13.833 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:34:13.833 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:34:13.843 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:34:13.843 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 01:35:13.897 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 01:35:13.919 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 01:35:13.919 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 01:35:13.919 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 01:35:13.950 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 01:35:13.952 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 01:35:13.952 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 01:35:13.960 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 01:35:13.960 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 11:51:28.001 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 11:51:28.012 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 11:51:28.013 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 11:51:28.013 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 11:51:28.064 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 11:51:28.075 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 11:51:28.075 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 11:51:28.085 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 11:51:28.086 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 11:52:27.899 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 11:52:27.899 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 11:52:27.900 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 11:52:27.900 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 11:52:27.908 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 11:52:27.910 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 11:52:27.911 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 11:52:27.912 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 11:52:27.913 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 11:53:52.204 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 11:53:52.215 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 11:53:52.215 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 11:53:52.215 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 11:53:52.275 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 11:53:52.284 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 11:53:52.285 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 11:53:52.294 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 11:53:52.294 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-09 11:54:07.656 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-09 11:54:07.659 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-09 11:54:07.659 +02:00 [INF] calcalc.Services.MattilsynetAPIServiceMock Getting items from mock!
+2025-08-09 11:54:07.659 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-09 11:54:07.673 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-09 11:54:07.676 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-09 11:54:07.676 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-09 11:54:07.680 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 0 units
+2025-08-09 11:54:07.681 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End

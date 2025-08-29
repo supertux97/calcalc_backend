@@ -1,0 +1,957 @@
+2025-08-27 13:51:54.363 +02:00 [INF] Hangfire.BackgroundJobServer Starting Hangfire Server using job storage: 'Database path: hangfire_taskqueue,  prefix: hangfire'
+2025-08-27 13:51:54.465 +02:00 [INF] Hangfire.BackgroundJobServer Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2025-08-27 13:51:54.680 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4214:d92c17e4 successfully announced in 172,5171 ms
+2025-08-27 13:51:54.684 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4214:d92c17e4 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2025-08-27 13:51:54.689 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'AggregatedCounter' table...
+2025-08-27 13:51:54.708 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4214:d92c17e4 all the dispatchers started
+2025-08-27 13:51:54.712 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'AggregatedCounter' table...
+2025-08-27 13:51:54.712 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Counter' table...
+2025-08-27 13:51:54.716 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Counter' table...
+2025-08-27 13:51:54.716 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Job' table...
+2025-08-27 13:51:54.718 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Job' table...
+2025-08-27 13:51:54.718 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'List' table...
+2025-08-27 13:51:54.721 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'List' table...
+2025-08-27 13:51:54.721 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Set' table...
+2025-08-27 13:51:54.723 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Set' table...
+2025-08-27 13:51:54.723 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Hash' table...
+2025-08-27 13:51:54.725 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Hash' table...
+2025-08-27 13:51:54.725 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'State' table...
+2025-08-27 13:51:54.727 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'State' table...
+2025-08-27 13:51:54.727 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'JobParameter' table...
+2025-08-27 13:51:54.730 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'JobParameter' table...
+2025-08-27 13:52:17.820 +02:00 [WRN] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware Failed to determine the https port for redirect.
+2025-08-27 13:52:22.275 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"Calories"' on entity type '"FoodItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 13:52:22.277 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"GramsPerUnit"' on entity type '"FoodHasUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 13:52:22.277 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"AmountDeciliters"' on entity type '"FoodUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 13:52:23.642 +02:00 [WRN] Microsoft.EntityFrameworkCore.Query Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-08-27 13:52:24.097 +02:00 [ERR] Microsoft.EntityFrameworkCore.Database.Connection An error occurred using the connection to database '""' on server '""'.
+2025-08-27 13:52:24.142 +02:00 [ERR] Microsoft.EntityFrameworkCore.Query An exception occurred while iterating over the results of a query for context type '"MvcMovie.Data.CalCalcContext"'."
+""System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-08-27 13:52:24.153 +02:00 [ERR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at calcalc.Controllers.FoodItemController.Index(String nameFilterString, String paginationStartAtName, String paginationPrevStartAt, String notification) in /Users/erlend/Documents/calcalc/calcalc/Controllers/FoodItemController.cs:line 48
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-27 13:52:55.716 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4214:d92c17e4 caught stopping signal...
+2025-08-27 13:52:55.726 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4214:d92c17e4 All dispatchers stopped
+2025-08-27 13:52:55.731 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4214:d92c17e4 successfully reported itself as stopped in 1,1502 ms
+2025-08-27 13:52:55.731 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4214:d92c17e4 has been stopped in total 10,9248 ms
+2025-08-27 13:53:05.087 +02:00 [INF] Hangfire.BackgroundJobServer Starting Hangfire Server using job storage: 'Database path: hangfire_taskqueue,  prefix: hangfire'
+2025-08-27 13:53:05.197 +02:00 [INF] Hangfire.BackgroundJobServer Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2025-08-27 13:53:05.347 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4254:6f7fea08 successfully announced in 123,11 ms
+2025-08-27 13:53:05.351 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4254:6f7fea08 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2025-08-27 13:53:05.358 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'AggregatedCounter' table...
+2025-08-27 13:53:05.374 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4254:6f7fea08 all the dispatchers started
+2025-08-27 13:53:05.380 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'AggregatedCounter' table...
+2025-08-27 13:53:05.380 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Counter' table...
+2025-08-27 13:53:05.383 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Counter' table...
+2025-08-27 13:53:05.383 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Job' table...
+2025-08-27 13:53:05.385 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Job' table...
+2025-08-27 13:53:05.385 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'List' table...
+2025-08-27 13:53:05.390 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'List' table...
+2025-08-27 13:53:05.390 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Set' table...
+2025-08-27 13:53:05.391 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Set' table...
+2025-08-27 13:53:05.391 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Hash' table...
+2025-08-27 13:53:05.392 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Hash' table...
+2025-08-27 13:53:05.392 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'State' table...
+2025-08-27 13:53:05.394 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'State' table...
+2025-08-27 13:53:05.394 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'JobParameter' table...
+2025-08-27 13:53:05.395 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'JobParameter' table...
+2025-08-27 13:53:07.677 +02:00 [WRN] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware Failed to determine the https port for redirect.
+2025-08-27 13:53:09.524 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"Calories"' on entity type '"FoodItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 13:53:09.526 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"GramsPerUnit"' on entity type '"FoodHasUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 13:53:09.526 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"AmountDeciliters"' on entity type '"FoodUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 13:53:10.930 +02:00 [WRN] Microsoft.EntityFrameworkCore.Query Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-08-27 13:53:11.266 +02:00 [ERR] Microsoft.EntityFrameworkCore.Database.Connection An error occurred using the connection to database '""' on server '""'.
+2025-08-27 13:53:11.304 +02:00 [ERR] Microsoft.EntityFrameworkCore.Query An exception occurred while iterating over the results of a query for context type '"MvcMovie.Data.CalCalcContext"'."
+""System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-08-27 13:53:11.318 +02:00 [ERR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at calcalc.Controllers.FoodItemController.Index(String nameFilterString, String paginationStartAtName, String paginationPrevStartAt, String notification) in /Users/erlend/Documents/calcalc/calcalc/Controllers/FoodItemController.cs:line 48
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-27 13:53:12.890 +02:00 [ERR] Microsoft.EntityFrameworkCore.Database.Connection An error occurred using the connection to database '""' on server '""'.
+2025-08-27 13:53:12.891 +02:00 [ERR] Microsoft.EntityFrameworkCore.Query An exception occurred while iterating over the results of a query for context type '"MvcMovie.Data.CalCalcContext"'."
+""System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-08-27 13:53:12.895 +02:00 [ERR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at calcalc.Controllers.FoodItemController.Index(String nameFilterString, String paginationStartAtName, String paginationPrevStartAt, String notification) in /Users/erlend/Documents/calcalc/calcalc/Controllers/FoodItemController.cs:line 48
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-27 13:53:40.002 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4254:6f7fea08 caught stopping signal...
+2025-08-27 13:53:40.137 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4254:6f7fea08 All dispatchers stopped
+2025-08-27 13:53:40.206 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4254:6f7fea08 successfully reported itself as stopped in 11,5662 ms
+2025-08-27 13:53:40.208 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4254:6f7fea08 has been stopped in total 202,0518 ms
+2025-08-27 13:53:51.437 +02:00 [INF] Hangfire.BackgroundJobServer Starting Hangfire Server using job storage: 'Database path: hangfire_taskqueue,  prefix: hangfire'
+2025-08-27 13:53:51.695 +02:00 [INF] Hangfire.BackgroundJobServer Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2025-08-27 13:53:51.962 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4274:61574438 successfully announced in 214,2914 ms
+2025-08-27 13:53:51.966 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4274:61574438 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2025-08-27 13:53:51.977 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'AggregatedCounter' table...
+2025-08-27 13:53:52.001 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4274:61574438 all the dispatchers started
+2025-08-27 13:53:52.002 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'AggregatedCounter' table...
+2025-08-27 13:53:52.002 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Counter' table...
+2025-08-27 13:53:52.006 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Counter' table...
+2025-08-27 13:53:52.006 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Job' table...
+2025-08-27 13:53:52.008 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Job' table...
+2025-08-27 13:53:52.008 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'List' table...
+2025-08-27 13:53:52.010 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'List' table...
+2025-08-27 13:53:52.010 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Set' table...
+2025-08-27 13:53:52.011 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Set' table...
+2025-08-27 13:53:52.012 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Hash' table...
+2025-08-27 13:53:52.014 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Hash' table...
+2025-08-27 13:53:52.015 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'State' table...
+2025-08-27 13:53:52.016 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'State' table...
+2025-08-27 13:53:52.017 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'JobParameter' table...
+2025-08-27 13:53:52.020 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'JobParameter' table...
+2025-08-27 13:53:53.129 +02:00 [WRN] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware Failed to determine the https port for redirect.
+2025-08-27 13:53:54.918 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"Calories"' on entity type '"FoodItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 13:53:54.921 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"GramsPerUnit"' on entity type '"FoodHasUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 13:53:54.921 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"AmountDeciliters"' on entity type '"FoodUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 13:53:56.076 +02:00 [WRN] Microsoft.EntityFrameworkCore.Query Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-08-27 13:53:56.376 +02:00 [ERR] Microsoft.EntityFrameworkCore.Database.Connection An error occurred using the connection to database '""' on server '""'.
+2025-08-27 13:53:56.408 +02:00 [ERR] Microsoft.EntityFrameworkCore.Query An exception occurred while iterating over the results of a query for context type '"MvcMovie.Data.CalCalcContext"'."
+""System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-08-27 13:53:56.421 +02:00 [ERR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at calcalc.Controllers.FoodItemController.Index(String nameFilterString, String paginationStartAtName, String paginationPrevStartAt, String notification) in /Users/erlend/Documents/calcalc/calcalc/Controllers/FoodItemController.cs:line 48
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-27 13:57:00.859 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4274:61574438 caught stopping signal...
+2025-08-27 13:57:00.869 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4274:61574438 All dispatchers stopped
+2025-08-27 13:57:00.881 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4274:61574438 successfully reported itself as stopped in 7,7481 ms
+2025-08-27 13:57:00.882 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4274:61574438 has been stopped in total 20,6021 ms
+2025-08-27 14:10:41.402 +02:00 [INF] Hangfire.BackgroundJobServer Starting Hangfire Server using job storage: 'Database path: hangfire_taskqueue,  prefix: hangfire'
+2025-08-27 14:10:41.542 +02:00 [INF] Hangfire.BackgroundJobServer Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2025-08-27 14:10:41.696 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4536:6923c054 successfully announced in 126,2346 ms
+2025-08-27 14:10:41.700 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4536:6923c054 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2025-08-27 14:10:41.706 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'AggregatedCounter' table...
+2025-08-27 14:10:41.725 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4536:6923c054 all the dispatchers started
+2025-08-27 14:10:41.726 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'AggregatedCounter' table...
+2025-08-27 14:10:41.727 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Counter' table...
+2025-08-27 14:10:41.731 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Counter' table...
+2025-08-27 14:10:41.731 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Job' table...
+2025-08-27 14:10:41.734 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Job' table...
+2025-08-27 14:10:41.735 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'List' table...
+2025-08-27 14:10:41.738 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'List' table...
+2025-08-27 14:10:41.738 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Set' table...
+2025-08-27 14:10:41.740 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Set' table...
+2025-08-27 14:10:41.740 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Hash' table...
+2025-08-27 14:10:41.742 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Hash' table...
+2025-08-27 14:10:41.742 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'State' table...
+2025-08-27 14:10:41.744 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'State' table...
+2025-08-27 14:10:41.744 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'JobParameter' table...
+2025-08-27 14:10:41.746 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'JobParameter' table...
+2025-08-27 14:11:05.227 +02:00 [WRN] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware Failed to determine the https port for redirect.
+2025-08-27 14:11:09.270 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"Calories"' on entity type '"FoodItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:11:09.273 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"GramsPerUnit"' on entity type '"FoodHasUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:11:09.274 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"AmountDeciliters"' on entity type '"FoodUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:11:10.448 +02:00 [WRN] Microsoft.EntityFrameworkCore.Query Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-08-27 14:11:17.475 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4536:6923c054 caught stopping signal...
+2025-08-27 14:11:17.483 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4536:6923c054 All dispatchers stopped
+2025-08-27 14:11:17.487 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4536:6923c054 successfully reported itself as stopped in 1,1097 ms
+2025-08-27 14:11:17.487 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4536:6923c054 has been stopped in total 10,9723 ms
+2025-08-27 14:22:19.227 +02:00 [INF] Hangfire.BackgroundJobServer Starting Hangfire Server using job storage: 'Database path: hangfire_taskqueue,  prefix: hangfire'
+2025-08-27 14:22:19.412 +02:00 [INF] Hangfire.BackgroundJobServer Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2025-08-27 14:22:19.607 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4761:35e56c2c successfully announced in 140,4183 ms
+2025-08-27 14:22:19.612 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4761:35e56c2c is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2025-08-27 14:22:19.620 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'AggregatedCounter' table...
+2025-08-27 14:22:19.643 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4761:35e56c2c all the dispatchers started
+2025-08-27 14:22:19.646 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'AggregatedCounter' table...
+2025-08-27 14:22:19.646 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Counter' table...
+2025-08-27 14:22:19.650 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Counter' table...
+2025-08-27 14:22:19.650 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Job' table...
+2025-08-27 14:22:19.652 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Job' table...
+2025-08-27 14:22:19.652 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'List' table...
+2025-08-27 14:22:19.654 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'List' table...
+2025-08-27 14:22:19.654 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Set' table...
+2025-08-27 14:22:19.656 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Set' table...
+2025-08-27 14:22:19.656 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Hash' table...
+2025-08-27 14:22:19.659 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Hash' table...
+2025-08-27 14:22:19.659 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'State' table...
+2025-08-27 14:22:19.664 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'State' table...
+2025-08-27 14:22:19.664 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'JobParameter' table...
+2025-08-27 14:22:19.666 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'JobParameter' table...
+2025-08-27 14:23:40.213 +02:00 [WRN] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware Failed to determine the https port for redirect.
+2025-08-27 14:23:45.090 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"Calories"' on entity type '"FoodItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:23:45.093 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"GramsPerUnit"' on entity type '"FoodHasUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:23:45.093 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"AmountDeciliters"' on entity type '"FoodUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:23:46.130 +02:00 [WRN] Microsoft.EntityFrameworkCore.Query Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-08-27 14:24:18.297 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4761:35e56c2c caught stopping signal...
+2025-08-27 14:24:18.306 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4761:35e56c2c All dispatchers stopped
+2025-08-27 14:24:18.312 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4761:35e56c2c successfully reported itself as stopped in 1,3898 ms
+2025-08-27 14:24:18.312 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4761:35e56c2c has been stopped in total 11,6185 ms
+2025-08-27 14:24:27.454 +02:00 [INF] Hangfire.BackgroundJobServer Starting Hangfire Server using job storage: 'Database path: hangfire_taskqueue,  prefix: hangfire'
+2025-08-27 14:24:27.551 +02:00 [INF] Hangfire.BackgroundJobServer Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2025-08-27 14:24:27.712 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4821:aced7c8f successfully announced in 130,0617 ms
+2025-08-27 14:24:27.716 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4821:aced7c8f is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2025-08-27 14:24:27.727 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'AggregatedCounter' table...
+2025-08-27 14:24:27.740 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4821:aced7c8f all the dispatchers started
+2025-08-27 14:24:27.746 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'AggregatedCounter' table...
+2025-08-27 14:24:27.746 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Counter' table...
+2025-08-27 14:24:27.753 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Counter' table...
+2025-08-27 14:24:27.753 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Job' table...
+2025-08-27 14:24:27.754 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Job' table...
+2025-08-27 14:24:27.754 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'List' table...
+2025-08-27 14:24:27.755 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'List' table...
+2025-08-27 14:24:27.755 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Set' table...
+2025-08-27 14:24:27.757 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Set' table...
+2025-08-27 14:24:27.757 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Hash' table...
+2025-08-27 14:24:27.758 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Hash' table...
+2025-08-27 14:24:27.758 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'State' table...
+2025-08-27 14:24:27.759 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'State' table...
+2025-08-27 14:24:27.760 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'JobParameter' table...
+2025-08-27 14:24:27.765 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'JobParameter' table...
+2025-08-27 14:24:38.582 +02:00 [WRN] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware Failed to determine the https port for redirect.
+2025-08-27 14:24:41.673 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"Calories"' on entity type '"FoodItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:24:41.676 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"GramsPerUnit"' on entity type '"FoodHasUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:24:41.677 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"AmountDeciliters"' on entity type '"FoodUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:24:43.009 +02:00 [WRN] Microsoft.EntityFrameworkCore.Query Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-08-27 14:24:52.634 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4821:aced7c8f caught stopping signal...
+2025-08-27 14:24:52.641 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4821:aced7c8f All dispatchers stopped
+2025-08-27 14:24:52.647 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4821:aced7c8f successfully reported itself as stopped in 1,6313 ms
+2025-08-27 14:24:52.647 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:4821:aced7c8f has been stopped in total 11,707 ms
+2025-08-27 14:35:50.862 +02:00 [INF] Hangfire.BackgroundJobServer Starting Hangfire Server using job storage: 'Database path: hangfire_taskqueue,  prefix: hangfire'
+2025-08-27 14:35:50.913 +02:00 [INF] Hangfire.BackgroundJobServer Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2025-08-27 14:35:50.972 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5270:bba8f819 successfully announced in 18,4741 ms
+2025-08-27 14:35:50.977 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5270:bba8f819 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2025-08-27 14:35:50.980 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'AggregatedCounter' table...
+2025-08-27 14:35:51.008 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'AggregatedCounter' table...
+2025-08-27 14:35:51.008 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Counter' table...
+2025-08-27 14:35:51.012 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Counter' table...
+2025-08-27 14:35:51.012 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Job' table...
+2025-08-27 14:35:51.013 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Job' table...
+2025-08-27 14:35:51.013 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'List' table...
+2025-08-27 14:35:51.017 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'List' table...
+2025-08-27 14:35:51.017 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Set' table...
+2025-08-27 14:35:51.019 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Set' table...
+2025-08-27 14:35:51.020 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Hash' table...
+2025-08-27 14:35:51.022 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Hash' table...
+2025-08-27 14:35:51.022 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'State' table...
+2025-08-27 14:35:51.024 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'State' table...
+2025-08-27 14:35:51.025 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'JobParameter' table...
+2025-08-27 14:35:51.026 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'JobParameter' table...
+2025-08-27 14:35:51.041 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5270:bba8f819 all the dispatchers started
+2025-08-27 14:35:51.145 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-27 14:35:51.398 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-27 14:35:51.416 +02:00 [INF] System.Net.Http.HttpClient.Default.LogicalHandler Start processing HTTP request "GET" "https://www.matvaretabellen.no/api/nb/foods.json"
+2025-08-27 14:35:51.419 +02:00 [INF] System.Net.Http.HttpClient.Default.ClientHandler Sending HTTP request "GET" "https://www.matvaretabellen.no/api/nb/foods.json"
+2025-08-27 14:35:54.676 +02:00 [INF] System.Net.Http.HttpClient.Default.ClientHandler Received HTTP response headers after 3251.8908ms - 200
+2025-08-27 14:35:54.681 +02:00 [INF] System.Net.Http.HttpClient.Default.LogicalHandler End processing HTTP request after 3278.4878ms - 200
+2025-08-27 14:35:58.680 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-27 14:35:59.796 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"Calories"' on entity type '"FoodItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:35:59.798 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"GramsPerUnit"' on entity type '"FoodHasUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:35:59.798 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"AmountDeciliters"' on entity type '"FoodUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:36:02.557 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-27 14:36:49.251 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5270:bba8f819 caught stopping signal...
+2025-08-27 14:36:49.782 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5270:bba8f819 caught stopped signal...
+2025-08-27 14:37:14.718 +02:00 [INF] Hangfire.BackgroundJobServer Starting Hangfire Server using job storage: 'Database path: hangfire_taskqueue,  prefix: hangfire'
+2025-08-27 14:37:14.776 +02:00 [INF] Hangfire.BackgroundJobServer Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2025-08-27 14:37:14.835 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5293:2e60d6e9 successfully announced in 21,4622 ms
+2025-08-27 14:37:14.841 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5293:2e60d6e9 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2025-08-27 14:37:14.846 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'AggregatedCounter' table...
+2025-08-27 14:37:14.866 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'AggregatedCounter' table...
+2025-08-27 14:37:14.866 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Counter' table...
+2025-08-27 14:37:14.870 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Counter' table...
+2025-08-27 14:37:14.870 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Job' table...
+2025-08-27 14:37:14.872 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Job' table...
+2025-08-27 14:37:14.872 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'List' table...
+2025-08-27 14:37:14.875 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'List' table...
+2025-08-27 14:37:14.875 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Set' table...
+2025-08-27 14:37:14.876 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5293:2e60d6e9 all the dispatchers started
+2025-08-27 14:37:14.877 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Set' table...
+2025-08-27 14:37:14.878 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Hash' table...
+2025-08-27 14:37:14.879 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Hash' table...
+2025-08-27 14:37:14.879 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'State' table...
+2025-08-27 14:37:14.882 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'State' table...
+2025-08-27 14:37:14.882 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'JobParameter' table...
+2025-08-27 14:37:14.885 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'JobParameter' table...
+2025-08-27 14:38:07.253 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5293:2e60d6e9 caught stopping signal...
+2025-08-27 14:38:07.791 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5293:2e60d6e9 caught stopped signal...
+2025-08-27 14:38:18.807 +02:00 [INF] Hangfire.BackgroundJobServer Starting Hangfire Server using job storage: 'Database path: hangfire_taskqueue,  prefix: hangfire'
+2025-08-27 14:38:18.859 +02:00 [INF] Hangfire.BackgroundJobServer Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2025-08-27 14:38:18.901 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5341:34db8ab2 successfully announced in 15,8284 ms
+2025-08-27 14:38:18.905 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5341:34db8ab2 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2025-08-27 14:38:18.908 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'AggregatedCounter' table...
+2025-08-27 14:38:18.928 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'AggregatedCounter' table...
+2025-08-27 14:38:18.928 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Counter' table...
+2025-08-27 14:38:18.930 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5341:34db8ab2 all the dispatchers started
+2025-08-27 14:38:18.931 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Counter' table...
+2025-08-27 14:38:18.931 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Job' table...
+2025-08-27 14:38:18.942 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Job' table...
+2025-08-27 14:38:18.942 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'List' table...
+2025-08-27 14:38:18.943 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'List' table...
+2025-08-27 14:38:18.943 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Set' table...
+2025-08-27 14:38:18.945 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Set' table...
+2025-08-27 14:38:18.945 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Hash' table...
+2025-08-27 14:38:18.947 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Hash' table...
+2025-08-27 14:38:18.947 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'State' table...
+2025-08-27 14:38:18.949 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'State' table...
+2025-08-27 14:38:18.949 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'JobParameter' table...
+2025-08-27 14:38:18.953 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'JobParameter' table...
+2025-08-27 14:38:19.024 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-27 14:38:19.204 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-27 14:38:19.219 +02:00 [INF] System.Net.Http.HttpClient.Default.LogicalHandler Start processing HTTP request "GET" "https://www.matvaretabellen.no/api/nb/foods.json"
+2025-08-27 14:38:19.222 +02:00 [INF] System.Net.Http.HttpClient.Default.ClientHandler Sending HTTP request "GET" "https://www.matvaretabellen.no/api/nb/foods.json"
+2025-08-27 14:38:19.685 +02:00 [INF] System.Net.Http.HttpClient.Default.ClientHandler Received HTTP response headers after 457.5228ms - 200
+2025-08-27 14:38:19.690 +02:00 [INF] System.Net.Http.HttpClient.Default.LogicalHandler End processing HTTP request after 481.9628ms - 200
+2025-08-27 14:38:24.076 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-27 14:38:25.082 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"Calories"' on entity type '"FoodItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:38:25.084 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"GramsPerUnit"' on entity type '"FoodHasUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:38:25.084 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"AmountDeciliters"' on entity type '"FoodUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:38:27.736 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-27 14:42:42.395 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5341:34db8ab2 caught stopping signal...
+2025-08-27 14:42:43.113 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5341:34db8ab2 caught stopped signal...
+2025-08-27 14:43:14.613 +02:00 [INF] Hangfire.BackgroundJobServer Starting Hangfire Server using job storage: 'Database path: hangfire_taskqueue,  prefix: hangfire'
+2025-08-27 14:43:14.670 +02:00 [INF] Hangfire.BackgroundJobServer Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2025-08-27 14:43:14.721 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5437:32893849 successfully announced in 15,9406 ms
+2025-08-27 14:43:14.725 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5437:32893849 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2025-08-27 14:43:14.732 +02:00 [INF] Hangfire.Server.ServerWatchdog 2 servers were removed due to timeout
+2025-08-27 14:43:14.735 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'AggregatedCounter' table...
+2025-08-27 14:43:14.748 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'AggregatedCounter' table...
+2025-08-27 14:43:14.748 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Counter' table...
+2025-08-27 14:43:14.751 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Counter' table...
+2025-08-27 14:43:14.752 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Job' table...
+2025-08-27 14:43:14.753 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Job' table...
+2025-08-27 14:43:14.753 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'List' table...
+2025-08-27 14:43:14.756 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'List' table...
+2025-08-27 14:43:14.756 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5437:32893849 all the dispatchers started
+2025-08-27 14:43:14.757 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Set' table...
+2025-08-27 14:43:14.760 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Set' table...
+2025-08-27 14:43:14.760 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Hash' table...
+2025-08-27 14:43:14.762 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Hash' table...
+2025-08-27 14:43:14.762 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'State' table...
+2025-08-27 14:43:14.763 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'State' table...
+2025-08-27 14:43:14.763 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'JobParameter' table...
+2025-08-27 14:43:14.766 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'JobParameter' table...
+2025-08-27 14:43:14.847 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-27 14:43:15.031 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-27 14:43:15.048 +02:00 [INF] System.Net.Http.HttpClient.Default.LogicalHandler Start processing HTTP request "GET" "https://www.matvaretabellen.no/api/nb/foods.json"
+2025-08-27 14:43:15.051 +02:00 [INF] System.Net.Http.HttpClient.Default.ClientHandler Sending HTTP request "GET" "https://www.matvaretabellen.no/api/nb/foods.json"
+2025-08-27 14:43:15.708 +02:00 [INF] System.Net.Http.HttpClient.Default.ClientHandler Received HTTP response headers after 651.1395ms - 200
+2025-08-27 14:43:15.713 +02:00 [INF] System.Net.Http.HttpClient.Default.LogicalHandler End processing HTTP request after 677.3019ms - 200
+2025-08-27 14:43:17.380 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-27 14:43:18.437 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"Calories"' on entity type '"FoodItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:43:18.438 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"GramsPerUnit"' on entity type '"FoodHasUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:43:18.438 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"AmountDeciliters"' on entity type '"FoodUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:43:22.350 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-27 14:43:22.350 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-27 14:43:22.351 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-27 14:43:22.975 +02:00 [ERR] Hangfire.AutomaticRetryAttribute Failed to process the job '8': an exception occurred.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at calcalc.BackgroundJobs.MattilsynetSync.DoSync() in /Users/erlend/Documents/calcalc/calcalc/BackgroundJobs/MattilsynetSync.cs:line 124
+   at calcalc.BackgroundJobs.MattilsynetSync.DoSync() in /Users/erlend/Documents/calcalc/calcalc/BackgroundJobs/MattilsynetSync.cs:line 136
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2025-08-27 14:44:20.851 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5437:32893849 caught stopping signal...
+2025-08-27 14:44:20.858 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5437:32893849 All dispatchers stopped
+2025-08-27 14:44:20.862 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5437:32893849 successfully reported itself as stopped in 1,0085 ms
+2025-08-27 14:44:20.862 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5437:32893849 has been stopped in total 9,4772 ms
+2025-08-27 14:44:29.645 +02:00 [INF] Hangfire.BackgroundJobServer Starting Hangfire Server using job storage: 'Database path: hangfire_taskqueue,  prefix: hangfire'
+2025-08-27 14:44:29.716 +02:00 [INF] Hangfire.BackgroundJobServer Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2025-08-27 14:44:29.785 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5458:3e06b72e successfully announced in 30,0092 ms
+2025-08-27 14:44:29.791 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5458:3e06b72e is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2025-08-27 14:44:29.801 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'AggregatedCounter' table...
+2025-08-27 14:44:29.822 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'AggregatedCounter' table...
+2025-08-27 14:44:29.823 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Counter' table...
+2025-08-27 14:44:29.825 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Counter' table...
+2025-08-27 14:44:29.825 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Job' table...
+2025-08-27 14:44:29.827 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Job' table...
+2025-08-27 14:44:29.827 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'List' table...
+2025-08-27 14:44:29.827 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5458:3e06b72e all the dispatchers started
+2025-08-27 14:44:29.828 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'List' table...
+2025-08-27 14:44:29.828 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Set' table...
+2025-08-27 14:44:29.831 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Set' table...
+2025-08-27 14:44:29.831 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Hash' table...
+2025-08-27 14:44:29.836 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Hash' table...
+2025-08-27 14:44:29.836 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'State' table...
+2025-08-27 14:44:29.838 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'State' table...
+2025-08-27 14:44:29.838 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'JobParameter' table...
+2025-08-27 14:44:29.840 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'JobParameter' table...
+2025-08-27 14:44:29.951 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-27 14:44:30.233 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-27 14:44:30.252 +02:00 [INF] System.Net.Http.HttpClient.Default.LogicalHandler Start processing HTTP request "GET" "https://www.matvaretabellen.no/api/nb/foods.json"
+2025-08-27 14:44:30.255 +02:00 [INF] System.Net.Http.HttpClient.Default.ClientHandler Sending HTTP request "GET" "https://www.matvaretabellen.no/api/nb/foods.json"
+2025-08-27 14:44:30.655 +02:00 [INF] System.Net.Http.HttpClient.Default.ClientHandler Received HTTP response headers after 395.5067ms - 200
+2025-08-27 14:44:30.661 +02:00 [INF] System.Net.Http.HttpClient.Default.LogicalHandler End processing HTTP request after 422.4496ms - 200
+2025-08-27 14:44:33.046 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-27 14:44:34.399 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"Calories"' on entity type '"FoodItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:44:34.400 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"GramsPerUnit"' on entity type '"FoodHasUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:44:34.401 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"AmountDeciliters"' on entity type '"FoodUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:44:37.297 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-27 14:44:37.297 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-27 14:44:37.297 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-27 14:44:37.898 +02:00 [ERR] Hangfire.AutomaticRetryAttribute Failed to process the job '9': an exception occurred.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at calcalc.BackgroundJobs.MattilsynetSync.DoSync() in /Users/erlend/Documents/calcalc/calcalc/BackgroundJobs/MattilsynetSync.cs:line 124
+   at calcalc.BackgroundJobs.MattilsynetSync.DoSync() in /Users/erlend/Documents/calcalc/calcalc/BackgroundJobs/MattilsynetSync.cs:line 136
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2025-08-27 14:44:53.861 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5458:3e06b72e caught stopping signal...
+2025-08-27 14:44:53.868 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5458:3e06b72e All dispatchers stopped
+2025-08-27 14:44:53.872 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5458:3e06b72e successfully reported itself as stopped in 1,0808 ms
+2025-08-27 14:44:53.872 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5458:3e06b72e has been stopped in total 9,2475 ms
+2025-08-27 14:45:27.158 +02:00 [INF] Hangfire.BackgroundJobServer Starting Hangfire Server using job storage: 'Database path: hangfire_taskqueue,  prefix: hangfire'
+2025-08-27 14:45:27.366 +02:00 [INF] Hangfire.BackgroundJobServer Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2025-08-27 14:45:27.445 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5477:57bcb06c successfully announced in 20,0171 ms
+2025-08-27 14:45:27.476 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5477:57bcb06c is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2025-08-27 14:45:27.560 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'AggregatedCounter' table...
+2025-08-27 14:45:27.705 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'AggregatedCounter' table...
+2025-08-27 14:45:27.705 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Counter' table...
+2025-08-27 14:45:27.708 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Counter' table...
+2025-08-27 14:45:27.709 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Job' table...
+2025-08-27 14:45:27.711 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Job' table...
+2025-08-27 14:45:27.711 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'List' table...
+2025-08-27 14:45:27.739 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'List' table...
+2025-08-27 14:45:27.739 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Set' table...
+2025-08-27 14:45:27.743 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Set' table...
+2025-08-27 14:45:27.744 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Hash' table...
+2025-08-27 14:45:27.746 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Hash' table...
+2025-08-27 14:45:27.746 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'State' table...
+2025-08-27 14:45:27.750 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'State' table...
+2025-08-27 14:45:27.750 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'JobParameter' table...
+2025-08-27 14:45:27.776 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'JobParameter' table...
+2025-08-27 14:45:27.825 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5477:57bcb06c all the dispatchers started
+2025-08-27 14:45:28.060 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-27 14:45:28.784 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-27 14:45:28.818 +02:00 [INF] System.Net.Http.HttpClient.Default.LogicalHandler Start processing HTTP request "GET" "https://www.matvaretabellen.no/api/nb/foods.json"
+2025-08-27 14:45:28.824 +02:00 [INF] System.Net.Http.HttpClient.Default.ClientHandler Sending HTTP request "GET" "https://www.matvaretabellen.no/api/nb/foods.json"
+2025-08-27 14:45:32.579 +02:00 [INF] System.Net.Http.HttpClient.Default.ClientHandler Received HTTP response headers after 3749.6732ms - 200
+2025-08-27 14:45:32.585 +02:00 [INF] System.Net.Http.HttpClient.Default.LogicalHandler End processing HTTP request after 3790.2694ms - 200
+2025-08-27 14:45:34.938 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-27 14:45:36.899 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"Calories"' on entity type '"FoodItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:45:36.901 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"GramsPerUnit"' on entity type '"FoodHasUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:45:36.902 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"AmountDeciliters"' on entity type '"FoodUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:45:42.189 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-27 14:45:42.190 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-27 14:45:42.190 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-27 14:46:29.368 +02:00 [INF] Hangfire.BackgroundJobServer Starting Hangfire Server using job storage: 'Database path: hangfire_taskqueue,  prefix: hangfire'
+2025-08-27 14:46:29.416 +02:00 [INF] Hangfire.BackgroundJobServer Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2025-08-27 14:46:29.461 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5525:c6a13fa0 successfully announced in 15,7156 ms
+2025-08-27 14:46:29.465 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5525:c6a13fa0 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2025-08-27 14:46:29.468 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'AggregatedCounter' table...
+2025-08-27 14:46:29.483 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5525:c6a13fa0 all the dispatchers started
+2025-08-27 14:46:29.486 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'AggregatedCounter' table...
+2025-08-27 14:46:29.486 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Counter' table...
+2025-08-27 14:46:29.488 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Counter' table...
+2025-08-27 14:46:29.488 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Job' table...
+2025-08-27 14:46:29.490 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Job' table...
+2025-08-27 14:46:29.490 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'List' table...
+2025-08-27 14:46:29.494 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'List' table...
+2025-08-27 14:46:29.494 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Set' table...
+2025-08-27 14:46:29.496 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Set' table...
+2025-08-27 14:46:29.496 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Hash' table...
+2025-08-27 14:46:29.498 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Hash' table...
+2025-08-27 14:46:29.498 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'State' table...
+2025-08-27 14:46:29.500 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'State' table...
+2025-08-27 14:46:29.500 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'JobParameter' table...
+2025-08-27 14:46:29.502 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'JobParameter' table...
+2025-08-27 14:46:29.583 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-27 14:46:29.767 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-27 14:46:29.781 +02:00 [INF] System.Net.Http.HttpClient.Default.LogicalHandler Start processing HTTP request "GET" "https://www.matvaretabellen.no/api/nb/foods.json"
+2025-08-27 14:46:29.784 +02:00 [INF] System.Net.Http.HttpClient.Default.ClientHandler Sending HTTP request "GET" "https://www.matvaretabellen.no/api/nb/foods.json"
+2025-08-27 14:46:30.448 +02:00 [INF] System.Net.Http.HttpClient.Default.ClientHandler Received HTTP response headers after 659.4947ms - 200
+2025-08-27 14:46:30.452 +02:00 [INF] System.Net.Http.HttpClient.Default.LogicalHandler End processing HTTP request after 681.1192ms - 200
+2025-08-27 14:46:32.820 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-27 14:46:33.872 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"Calories"' on entity type '"FoodItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:46:33.874 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"GramsPerUnit"' on entity type '"FoodHasUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:46:33.874 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"AmountDeciliters"' on entity type '"FoodUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:46:36.816 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-27 14:46:36.816 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-27 14:46:36.816 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-27 14:51:29.484 +02:00 [INF] Hangfire.Server.ServerWatchdog 2 servers were removed due to timeout
+2025-08-27 14:58:33.167 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5525:c6a13fa0 caught stopping signal...
+2025-08-27 14:58:33.697 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5525:c6a13fa0 caught stopped signal...
+2025-08-27 14:59:24.110 +02:00 [INF] Hangfire.BackgroundJobServer Starting Hangfire Server using job storage: 'Database path: hangfire_taskqueue,  prefix: hangfire'
+2025-08-27 14:59:24.162 +02:00 [INF] Hangfire.BackgroundJobServer Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2025-08-27 14:59:24.211 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5750:f3e6481b successfully announced in 14,6346 ms
+2025-08-27 14:59:24.216 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5750:f3e6481b is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2025-08-27 14:59:24.220 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'AggregatedCounter' table...
+2025-08-27 14:59:24.249 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'AggregatedCounter' table...
+2025-08-27 14:59:24.249 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Counter' table...
+2025-08-27 14:59:24.249 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5750:f3e6481b all the dispatchers started
+2025-08-27 14:59:24.251 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Counter' table...
+2025-08-27 14:59:24.252 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Job' table...
+2025-08-27 14:59:24.255 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Job' table...
+2025-08-27 14:59:24.255 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'List' table...
+2025-08-27 14:59:24.259 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'List' table...
+2025-08-27 14:59:24.259 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Set' table...
+2025-08-27 14:59:24.260 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Set' table...
+2025-08-27 14:59:24.261 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Hash' table...
+2025-08-27 14:59:24.262 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Hash' table...
+2025-08-27 14:59:24.262 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'State' table...
+2025-08-27 14:59:24.263 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'State' table...
+2025-08-27 14:59:24.263 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'JobParameter' table...
+2025-08-27 14:59:24.265 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'JobParameter' table...
+2025-08-27 14:59:24.343 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-27 14:59:24.528 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-27 14:59:24.547 +02:00 [INF] System.Net.Http.HttpClient.Default.LogicalHandler Start processing HTTP request "GET" "https://www.matvaretabellen.no/api/nb/foods.json"
+2025-08-27 14:59:24.552 +02:00 [INF] System.Net.Http.HttpClient.Default.ClientHandler Sending HTTP request "GET" "https://www.matvaretabellen.no/api/nb/foods.json"
+2025-08-27 14:59:28.812 +02:00 [INF] System.Net.Http.HttpClient.Default.ClientHandler Received HTTP response headers after 4254.7138ms - 200
+2025-08-27 14:59:28.817 +02:00 [INF] System.Net.Http.HttpClient.Default.LogicalHandler End processing HTTP request after 4283.8635ms - 200
+2025-08-27 14:59:32.071 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-27 14:59:33.524 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"Calories"' on entity type '"FoodItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:59:33.526 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"GramsPerUnit"' on entity type '"FoodHasUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:59:33.526 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"AmountDeciliters"' on entity type '"FoodUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 14:59:37.177 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-27 14:59:37.177 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-27 14:59:37.177 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-27 14:59:37.976 +02:00 [ERR] Hangfire.AutomaticRetryAttribute Failed to process the job '13': an exception occurred.
+System.InvalidOperationException: The instance of entity type 'FoodHasUnit' cannot be tracked because another instance with the same key value for {'FoodItemId', 'FoodUnitId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.NullableKeyIdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.NavigationFixer.NavigationCollectionChanged(InternalEntityEntry entry, INavigationBase navigationBase, IEnumerable`1 added, IEnumerable`1 removed)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntryNotifier.NavigationCollectionChanged(InternalEntityEntry entry, INavigationBase navigationBase, IEnumerable`1 added, IEnumerable`1 removed)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.DetectNavigationChange(InternalEntityEntry entry, INavigationBase navigationBase)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.LocalDetectChanges(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.DetectChanges(IStateManager stateManager)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.ChangeTracker.DetectChanges()
+   at Microsoft.EntityFrameworkCore.DbContext.TryDetectChanges()
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at calcalc.BackgroundJobs.MattilsynetSync.DoSync() in /Users/erlend/Documents/calcalc/calcalc/BackgroundJobs/MattilsynetSync.cs:line 133
+   at calcalc.BackgroundJobs.MattilsynetSync.DoSync() in /Users/erlend/Documents/calcalc/calcalc/BackgroundJobs/MattilsynetSync.cs:line 137
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2025-08-27 14:59:54.291 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5750:f3e6481b caught stopping signal...
+2025-08-27 14:59:54.297 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5750:f3e6481b All dispatchers stopped
+2025-08-27 14:59:54.302 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5750:f3e6481b successfully reported itself as stopped in 0,9811 ms
+2025-08-27 14:59:54.302 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5750:f3e6481b has been stopped in total 9,9498 ms
+2025-08-27 15:03:49.500 +02:00 [INF] Hangfire.BackgroundJobServer Starting Hangfire Server using job storage: 'Database path: hangfire_taskqueue,  prefix: hangfire'
+2025-08-27 15:03:49.555 +02:00 [INF] Hangfire.BackgroundJobServer Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2025-08-27 15:03:49.607 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5829:521730bd successfully announced in 18,8184 ms
+2025-08-27 15:03:49.612 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5829:521730bd is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2025-08-27 15:03:49.619 +02:00 [INF] Hangfire.Server.ServerWatchdog 1 servers were removed due to timeout
+2025-08-27 15:03:49.625 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'AggregatedCounter' table...
+2025-08-27 15:03:49.644 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'AggregatedCounter' table...
+2025-08-27 15:03:49.644 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Counter' table...
+2025-08-27 15:03:49.648 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Counter' table...
+2025-08-27 15:03:49.648 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Job' table...
+2025-08-27 15:03:49.650 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5829:521730bd all the dispatchers started
+2025-08-27 15:03:49.651 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Job' table...
+2025-08-27 15:03:49.651 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'List' table...
+2025-08-27 15:03:49.653 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'List' table...
+2025-08-27 15:03:49.653 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Set' table...
+2025-08-27 15:03:49.656 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Set' table...
+2025-08-27 15:03:49.656 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'Hash' table...
+2025-08-27 15:03:49.657 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'Hash' table...
+2025-08-27 15:03:49.658 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'State' table...
+2025-08-27 15:03:49.659 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'State' table...
+2025-08-27 15:03:49.659 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Removing outdated records from the 'JobParameter' table...
+2025-08-27 15:03:49.660 +02:00 [INF] Hangfire.Storage.SQLite.ExpirationManager Outdated records removed from the 'JobParameter' table...
+2025-08-27 15:03:49.737 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-27 15:03:50.008 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-27 15:03:50.026 +02:00 [INF] System.Net.Http.HttpClient.Default.LogicalHandler Start processing HTTP request "GET" "https://www.matvaretabellen.no/api/nb/foods.json"
+2025-08-27 15:03:50.029 +02:00 [INF] System.Net.Http.HttpClient.Default.ClientHandler Sending HTTP request "GET" "https://www.matvaretabellen.no/api/nb/foods.json"
+2025-08-27 15:03:50.436 +02:00 [INF] System.Net.Http.HttpClient.Default.ClientHandler Received HTTP response headers after 402.0291ms - 200
+2025-08-27 15:03:50.441 +02:00 [INF] System.Net.Http.HttpClient.Default.LogicalHandler End processing HTTP request after 428.2885ms - 200
+2025-08-27 15:03:52.261 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-27 15:03:53.299 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"Calories"' on entity type '"FoodItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 15:03:53.301 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"GramsPerUnit"' on entity type '"FoodHasUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 15:03:53.301 +02:00 [WRN] Microsoft.EntityFrameworkCore.Model.Validation No store type was specified for the decimal property '"AmountDeciliters"' on entity type '"FoodUnit"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-08-27 15:03:56.606 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-27 15:03:56.611 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-27 15:03:56.612 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-27 15:19:12.012 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding units to food items to database, added 5245 units
+2025-08-27 15:19:12.030 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: End
+2025-08-27 15:19:12.035 +02:00 [WRN] Hangfire.Server.Worker Slow log: [Hangfire.DisableConcurrentExecutionAttribute, Hangfire.Server.PerformingContext] performed "OnPerforming for 7" in 652 sec
+2025-08-27 15:19:12.037 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-27 15:19:12.041 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-27 15:19:12.042 +02:00 [INF] System.Net.Http.HttpClient.Default.LogicalHandler Start processing HTTP request "GET" "https://www.matvaretabellen.no/api/nb/foods.json"
+2025-08-27 15:19:12.042 +02:00 [INF] System.Net.Http.HttpClient.Default.ClientHandler Sending HTTP request "GET" "https://www.matvaretabellen.no/api/nb/foods.json"
+2025-08-27 15:19:12.814 +02:00 [INF] System.Net.Http.HttpClient.Default.ClientHandler Received HTTP response headers after 772.1631ms - 200
+2025-08-27 15:19:12.814 +02:00 [INF] System.Net.Http.HttpClient.Default.LogicalHandler End processing HTTP request after 772.8575ms - 200
+2025-08-27 15:19:15.925 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-27 15:19:16.618 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-27 15:19:16.619 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-27 15:19:16.619 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-27 15:19:16.806 +02:00 [WRN] Hangfire.Server.Worker Slow log: [Hangfire.DisableConcurrentExecutionAttribute, Hangfire.Server.PerformingContext] performed "OnPerforming for 11" in 222 sec
+2025-08-27 15:19:16.806 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-27 15:19:16.810 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-27 15:19:16.810 +02:00 [INF] System.Net.Http.HttpClient.Default.LogicalHandler Start processing HTTP request "GET" "https://www.matvaretabellen.no/api/nb/foods.json"
+2025-08-27 15:19:16.810 +02:00 [INF] System.Net.Http.HttpClient.Default.ClientHandler Sending HTTP request "GET" "https://www.matvaretabellen.no/api/nb/foods.json"
+2025-08-27 15:19:16.810 +02:00 [ERR] Hangfire.AutomaticRetryAttribute Failed to process the job '7': an exception occurred.
+System.InvalidOperationException: The instance of entity type 'FoodHasUnit' cannot be tracked because another instance with the same key value for {'FoodItemId', 'FoodUnitId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.NavigationFixer.NavigationCollectionChanged(InternalEntityEntry entry, INavigationBase navigationBase, IEnumerable`1 added, IEnumerable`1 removed)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.DetectNavigationChange(InternalEntityEntry entry, INavigationBase navigationBase)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.LocalDetectChanges(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.DetectChanges(IStateManager stateManager)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at calcalc.BackgroundJobs.MattilsynetSync.DoSync() in /Users/erlend/Documents/calcalc/calcalc/BackgroundJobs/MattilsynetSync.cs:line 133
+   at calcalc.BackgroundJobs.MattilsynetSync.DoSync() in /Users/erlend/Documents/calcalc/calcalc/BackgroundJobs/MattilsynetSync.cs:line 137
+   at InvokeStub_TaskAwaiter.GetResult(Object, Object, IntPtr*)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2025-08-27 15:19:17.140 +02:00 [INF] System.Net.Http.HttpClient.Default.ClientHandler Received HTTP response headers after 329.3776ms - 200
+2025-08-27 15:19:17.140 +02:00 [INF] System.Net.Http.HttpClient.Default.LogicalHandler End processing HTTP request after 329.9636ms - 200
+2025-08-27 15:19:20.072 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-27 15:19:20.744 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-27 15:19:20.748 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-27 15:19:20.748 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-27 15:19:20.929 +02:00 [WRN] Hangfire.Server.Worker Slow log: [Hangfire.DisableConcurrentExecutionAttribute, Hangfire.Server.PerformingContext] performed "OnPerforming for 12" in 166 sec
+2025-08-27 15:19:20.929 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Start
+2025-08-27 15:19:20.929 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Get food items from API
+2025-08-27 15:19:20.930 +02:00 [INF] System.Net.Http.HttpClient.Default.LogicalHandler Start processing HTTP request "GET" "https://www.matvaretabellen.no/api/nb/foods.json"
+2025-08-27 15:19:20.930 +02:00 [INF] System.Net.Http.HttpClient.Default.ClientHandler Sending HTTP request "GET" "https://www.matvaretabellen.no/api/nb/foods.json"
+2025-08-27 15:19:20.930 +02:00 [ERR] Hangfire.AutomaticRetryAttribute Failed to process the job '11': an exception occurred.
+System.InvalidOperationException: The instance of entity type 'FoodHasUnit' cannot be tracked because another instance with the same key value for {'FoodItemId', 'FoodUnitId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.NavigationFixer.NavigationCollectionChanged(InternalEntityEntry entry, INavigationBase navigationBase, IEnumerable`1 added, IEnumerable`1 removed)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.DetectNavigationChange(InternalEntityEntry entry, INavigationBase navigationBase)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.LocalDetectChanges(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.DetectChanges(IStateManager stateManager)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at calcalc.BackgroundJobs.MattilsynetSync.DoSync() in /Users/erlend/Documents/calcalc/calcalc/BackgroundJobs/MattilsynetSync.cs:line 133
+   at calcalc.BackgroundJobs.MattilsynetSync.DoSync() in /Users/erlend/Documents/calcalc/calcalc/BackgroundJobs/MattilsynetSync.cs:line 137
+   at InvokeStub_TaskAwaiter.GetResult(Object, Object, IntPtr*)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2025-08-27 15:19:21.301 +02:00 [INF] System.Net.Http.HttpClient.Default.ClientHandler Received HTTP response headers after 371.4205ms - 200
+2025-08-27 15:19:21.302 +02:00 [INF] System.Net.Http.HttpClient.Default.LogicalHandler End processing HTTP request after 371.9853ms - 200
+2025-08-27 15:19:23.609 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Got food items from API
+2025-08-27 15:19:23.956 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding food items to database
+2025-08-27 15:19:23.956 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Done adding food items to database, added 0
+2025-08-27 15:19:23.956 +02:00 [INF] calcalc.BackgroundJobs.MattilsynetSync MattilsynetSync: Adding units to food items to database
+2025-08-27 15:19:24.145 +02:00 [ERR] Hangfire.AutomaticRetryAttribute Failed to process the job '12': an exception occurred.
+System.InvalidOperationException: The instance of entity type 'FoodHasUnit' cannot be tracked because another instance with the same key value for {'FoodItemId', 'FoodUnitId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.NavigationFixer.NavigationCollectionChanged(InternalEntityEntry entry, INavigationBase navigationBase, IEnumerable`1 added, IEnumerable`1 removed)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.DetectNavigationChange(InternalEntityEntry entry, INavigationBase navigationBase)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.LocalDetectChanges(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.DetectChanges(IStateManager stateManager)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at calcalc.BackgroundJobs.MattilsynetSync.DoSync() in /Users/erlend/Documents/calcalc/calcalc/BackgroundJobs/MattilsynetSync.cs:line 133
+   at calcalc.BackgroundJobs.MattilsynetSync.DoSync() in /Users/erlend/Documents/calcalc/calcalc/BackgroundJobs/MattilsynetSync.cs:line 137
+   at InvokeStub_TaskAwaiter.GetResult(Object, Object, IntPtr*)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2025-08-27 15:19:33.051 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5829:521730bd caught stopping signal...
+2025-08-27 15:19:33.204 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5829:521730bd All dispatchers stopped
+2025-08-27 15:19:33.246 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5829:521730bd successfully reported itself as stopped in 14,4352 ms
+2025-08-27 15:19:33.246 +02:00 [INF] Hangfire.Server.BackgroundServerProcess Server mbp-von-erlend:5829:521730bd has been stopped in total 175,62 ms

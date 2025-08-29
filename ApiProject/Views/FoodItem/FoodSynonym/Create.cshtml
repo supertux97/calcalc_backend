@@ -1,0 +1,11 @@
+@using Microsoft.EntityFrameworkCore.Metadata.Internal
+@model FoodItem
+@{
+    int idx = ViewBag.idx;
+}
+<div>
+    
+<label asp-for="Synonyms[idx].Name">Navn</label>
+<input asp-for="Synonyms[idx].Name" />
+<span asp-validation-for="Synonyms[idx].Name"></span>
+</div>
