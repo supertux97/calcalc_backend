@@ -2,9 +2,9 @@ name: Run tests on push
 
 
 on:
-  push:
+  pull_request:
     branches:
-    - develop
+    - main
 
 jobs:
   run_tests_job:
@@ -36,5 +36,5 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: TestResults
-        path: ./TestProject/tests/TestResults/TestResults.trx 
+        path: ./TestProject/tests/TestResults/TestResults.trx
 
