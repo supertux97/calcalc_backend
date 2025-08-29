@@ -22,6 +22,8 @@ jobs:
         dotnet-version: 9.0.x
     - name: App - Restore dependencies
       run: dotnet restore ./ApiProject/calcalc.sln
+    - name: List
+      run: find .
     - name: App - Build
       run: dotnet build ./ApiProject/calcalc.sln --no-restore
     - name: Test - Run tests
