@@ -23,7 +23,7 @@ jobs:
     - name: App - Restore dependencies
       run: dotnet restore ./ApiProject/calcalc.sln
     - name: Show
-      run: cat ./ApiProject/Controllers/FoodItemController.cs
+      run: cat ./TestProject/tests/UnitFoodItemList.cs
     - name: App - Build
       run: dotnet build ./ApiProject/calcalc.sln --no-restore
     - name: Test - Run tests
