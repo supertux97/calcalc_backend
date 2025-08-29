@@ -37,4 +37,3 @@ jobs:
       with:
         name: TestResults
         path: ./TestProject/tests/TestResults/TestResults.trx 
-
