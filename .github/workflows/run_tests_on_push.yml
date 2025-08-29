@@ -29,9 +29,9 @@ jobs:
     - name: App - Build
       run: dotnet build ./ApiProject/calcalc.sln --no-restore --configuration Release
     - name: Show number of tests
-      run: dotnet test ./TestProject/tests/tests.csproj --no-build --configuration Release --list-tests --verbosity=quiet --nologo | wc -l
+      run: dotnet test ./TestProject/tests/tests.csproj --list-tests --verbosity=quiet --nologo | wc -l
     - name: Test - Run tests
-      run: dotnet test ./TestProject/tests/tests.csproj --no-build --configuration Release --logger "trx;LogFileName=TestResults.trx"
+      run: dotnet test ./TestProject/tests/tests.csproj --logger "trx;LogFileName=TestResults.trx"
     - name: Upload test result
       uses: actions/upload-artifact@v4
       with:
