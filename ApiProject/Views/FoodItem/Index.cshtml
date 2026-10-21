@@ -1,12 +1,12 @@
-@using Microsoft.IdentityModel.Tokens
+@using Microsoft.AspNetCore.Http.Extensions
 @model calcalc.ViewModels.FoodItemIndexViewmodel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Food items";
 }
 
-<h1>Index</h1>
-@if (!Model.Notification.IsNullOrEmpty())
+<h1>Food items</h1>
+@if (!String.IsNullOrEmpty(Model?.Notification))
 {
     <div class="temp-notification">@Model.Notification</div>
 }
@@ -14,10 +14,27 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<form method="get" asp-action="Index" asp-controller="FoodItem">
-    <label asp-for="NameFilterString"></label>
-    <input asp-for="NameFilterString"/>
-    <button type="submit">Filtrer</button>
+<form id="searchForm" method="get" asp-action="Index" asp-controller="FoodItem">
+    <div>
+        <label asp-for="NameFilterString"></label>
+        <input asp-for="NameFilterString" id="NameFilterInput"/>
+        <button type="button" id="clearNameInput">Clear</button>
+    </div>
+    <div>
+    <label>
+        Only having synonyms
+        @Html.EditorFor(x => x.HasSynonymFilter)
+    </label>
+    </div>
+    <div>
+    <label>
+        Only added by user
+        @Html.EditorFor(x => x.IsAddedByUserFilter)
+    </label>
+    </div>
+    <div>
+    <button type="submit">Search</button>
+    </div>
 </form>
 <table class="table">
     <thead>
@@ -30,51 +47,127 @@
         </th>
         <th>@Html.DisplayNameFor(model => model.FoodItems[0].Synonyms)</th>
         <th>@Html.DisplayNameFor(model => model.FoodItems[0].Units)</th>
+        <th>@Html.DisplayNameFor(model => model.FoodItems[0].UserAdded)</th>
         <th></th>
     </tr>
     </thead>
     <tbody>
     @if (Model.FoodItems.Count == 0)
     {
-        <p>Ingen matvarer</p>
+        <p>No hits matching query</p>
     }
     @foreach (var item in Model.FoodItems)
     {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Name)
+                @if (item.InformationUrl != null)
+                    {
+                        <button data-popup-on-hover-url="@item.InformationUrl">
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </button>
+                    }
+                    else
+                    {
+                        <div>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </div>
+                    }
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Calories)
+                @((int)item.Calories)
             </td>
             <td>@(item.GetSynonymsNamesList())</td>
-            <td>@(item.GetFoodUnitNamesList())</td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <button onclick="$(this).next('.toggle-item').slideToggle()">
+                    @(item.GetFoodUnitNamesList())
+                </button>
+                <div class="toggle-item" style="display: none;">
+                @foreach(var unit in item.Units)
+                    {
+                        <div>
+                            <span>@(unit.FoodUnit.Name):</span>
+                            @{
+                                var calories = (unit.GramsPerUnit / 100) * item.Calories;
+                            }
+                            <span>@( (int) calories == calories ? (int) calories : calories  )  calories</span>
+                        </div>
+                    }
+                </div>
+            </td>
+            <td>@(item.UserAdded ? "Yes":"No")</td>
+            <td>
+                <a asp-action="Edit" asp-route-returnUrl="@Context.Request.GetDisplayUrl()" asp-route-id="@item.Id">Edit</a> |
+                @if (item.UserAdded)
+                    {
+                        <a asp-action="ManageUnits" asp-route-id="@item.Id">Manage units</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    }
             </td>
         </tr>
     }
     </tbody>
 </table>
+<dialog style="display: none;" id="popup-container">
+    <iframe id="popup-iframe"></iframe>
+    <button id="popup-close-btn">Lukk</button>
+</dialog>
 @if (Model.HasPreviousPage)
 {
     <a 
         asp-route-nameFilterString="@Model.NameFilterString"
-        asp-route-paginationStartAtName="@Model.PrevStartAtName">Forrige side</a>
+        asp-route-paginationPageNo="@(Model.PaginationPageNo - 1)">Previous page</a>
 }
 @if (Model.HasNextPage)
 {
     <a 
         asp-route-nameFilterString="@Model.NameFilterString"
-        asp-route-paginationPrevStartAt="@Model.CurrPageStartAtName" asp-route-paginationStartAtName="@Model.NextPageStartAtName">Neste side</a>
+        asp-route-paginationPageNo="@(Model.PaginationPageNo + 1)">Next page</a>
 }
+<style>
+    #popup-container{
+
+display: flex;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 700px;
+  max-width: 90vw;
+  height: 500px;
+  margin-left: 5rem;
+  flex-direction: column;
+    }
+    #popup-iframe{
+        flex-grow: 1;
+    }
+    </style>
 @section Scripts
 {
     <script>
         setTimeout(function(){
             $(".temp-notification").remove();
         }, 3000);
+
+
+        document.querySelector("#clearNameInput").addEventListener("click", function(){
+           document.querySelector("#NameFilterInput").value = "";
+           document.querySelector("#searchForm").submit();
+        });
+        const popupContainer = document.querySelector("#popup-container");
+        const popupIframe = document.querySelector("#popup-iframe");
+        const popupCloseBtn = document.querySelector("#popup-close-btn");
+
+        Array.from(document.querySelectorAll("[data-popup-on-hover-url]")).forEach(it => {
+            it.addEventListener("click", function(){
+                popupContainer.style.display = "flex";
+                popupContainer.open = true;
+                popupIframe.src = it.getAttribute("data-popup-on-hover-url");
+            });
+        });
+
+        popupCloseBtn.addEventListener("click", function(){
+                popupContainer.style.display = "none";
+                popupContainer.open = false;
+        });
     </script>
 }

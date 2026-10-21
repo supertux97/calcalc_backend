@@ -1,8 +1,62 @@
-﻿@{
+﻿@using Microsoft.EntityFrameworkCore.Metadata.Conventions
+@model calcalc.ViewModels.HomeViewModel;
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">CalCalc</h1>
+
+    <h2>Food Items</h2>
+    <div class="">
+        <div>No items:</div>
+        <div>@Model.CntFoodItemsTotal</div>
+        <div>Imported from external database: @Model.CntFoodItemsExternal</div>
+        <div>Created by user: @Model.CntFoodItemsUserAdded</div>
+    </div>
+
+    <div>
+        Last food items added by user
+        <ul>
+            @foreach (var item in Model.FoodItemsUserLatestCreated)
+            {
+                <li>
+                    <div>
+                        <a asp-action="FoodItem/Edit" asp-route-id="@item.Id">@(item.Name)</a>
+                        @($"(Added {item.Created.ToShortDateString()})")
+                    </div>
+                </li>
+            }
+            @if (Model.FoodItemsUserLatestCreated.Count() == 0)
+            {
+                <div>No food items added yet by user</div>
+            }
+        </ul>
+    </div>
+    <div>
+        Last food items edited by user
+        <ul>
+            @foreach (var item in Model.FoodItemsUserLatestUpdated)
+            {
+                <li>
+                    <a asp-action="FoodItem/Edit" asp-route-id="@item.Id">@item.Name</a>
+                    @($"(Edited {item.Created.ToShortDateString()})")
+                </li>
+            }
+            @if (Model.FoodItemsUserLatestUpdated.Count() == 0)
+            {
+                <div>No food items added yet by user</div>
+            }
+            
+        </ul>
+    </div>
+
+    <div>
+        Latest sync:
+        @Model.LatestSyncEvent.Time.ToLocalTime()
+    </div>
+    <div>
+        Latest successfull sync
+        @Model.LatestSuccessfullSyncEvent.Time.ToLocalTime()
+    </div>
 </div>

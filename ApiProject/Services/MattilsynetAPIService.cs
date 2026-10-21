@@ -1,5 +1,6 @@
 using System.Text.Json;
 using Newtonsoft.Json.Linq;
+using Newtonsoft.Json.Serialization;
 using NuGet.Protocol;
 
 namespace calcalc.Services;
@@ -18,20 +19,28 @@ public class Calories
     public decimal? Quantity { get; set; }
 }
 
-public class MattilsynetAPIFoodItem
+public class FoodItem
 {
     public string FoodName { get; set; }
-    public Calories Calories { get; set; } 
+    public Calories Calories { get; set; }
     public List<Portion> Portions { get; set; }
+    public string? Uri { get; set; }
 }
 
 // todo searchKeywords
-    public class MattilsynetAPIFoodItemsResult
-    {
-        public List<MattilsynetAPIFoodItem> Foods { get; set; }
-    }
+public class FoodItemsResult
+{
+    public List<FoodItem> Foods { get; set; }
+    public FoodItemsError? Error { get; set; }
+}
 
-    public class MattilsynetAPIService : IMattilsynetAPIService
+public class FoodItemsError
+{
+    public string Description { get; set; }
+    public int StatusCode { get; set; }
+}
+
+public class MattilsynetAPIService : IFooditemsService
 {
     private readonly HttpClient _httpClient;
 
@@ -42,16 +51,20 @@ public class MattilsynetAPIFoodItem
         _httpClient.DefaultRequestHeaders.Add("Accept", "application/json");
     }
 
-    public async Task<MattilsynetAPIFoodItemsResult?> GetFoodItems()
+    public async Task<FoodItemsResult?> GetFoodItems()
     {
         var resp = await _httpClient.GetAsync("/api/nb/foods.json");
         var json = await resp.Content.ReadAsStringAsync();
+        if (resp.StatusCode != System.Net.HttpStatusCode.OK)
+        {
+            return new FoodItemsResult { Error = new FoodItemsError { StatusCode = (int)resp.StatusCode, Description = json } };
+        }
         var serializerOptions = new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true,
         };
         // todo logging og sjekk resultat
-        return JsonSerializer.Deserialize<MattilsynetAPIFoodItemsResult>(json, serializerOptions);
+        return JsonSerializer.Deserialize<FoodItemsResult>(json, serializerOptions);
     }
 
     public void Dispose()

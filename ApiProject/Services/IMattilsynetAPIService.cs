@@ -1,6 +1,6 @@
 namespace calcalc.Services;
 
-public interface IMattilsynetAPIService: IDisposable, IAsyncDisposable
+public interface IFooditemsService : IDisposable, IAsyncDisposable
 {
-    Task<MattilsynetAPIFoodItemsResult?> GetFoodItems();
+    Task<FoodItemsResult?> GetFoodItems();
 }

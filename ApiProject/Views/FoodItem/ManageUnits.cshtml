@@ -1,0 +1,45 @@
+@model calcalc.ViewModels.FoodManageUnitsViewModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+<h1>Manage units for @Model.FoodItem.Name</h1>
+<h2>Added</h2>
+@foreach (var unit in Model.FoodItem.Units)
+{
+    <div>
+        @{
+            var foodUnitName = Model.Units.Find(u => u.Id == unit.FoodUnitId).Name;
+        }
+        @foodUnitName
+        <input disabled="@(foodUnitName == "gram")" type="button" value="Delete"
+               onclick="location.href='@Url.Action("DeleteFoodUnit", "FoodItem", new { foodItemId = Model.FoodItem.Id, foodUnitId = unit.FoodUnitId })'" />
+    </div>
+}
+@if (Model.FoodItem.Units.Count() == 0)
+{
+    <div>No units added</div>
+}
+
+<h2>Add new</h2>
+<select id="unit-kind">
+    @foreach (var unit in Model.Units.Where(u => !Model.FoodItem.Units.Any(u2 => u.Id == u2.FoodUnitId)))
+    {
+        <option value="@unit.Id">@unit.Name</option>
+    }
+</select>
+<label>
+    Amount gram pr unit
+    <input id="unit-amount" type="number" />
+</label>
+<input type="button" value="Add" id="addNewUnitBtn" />
+
+@section Scripts
+{
+
+    <script>
+        $("#addNewUnitBtn").click(function () {
+            $.post("/FoodItem/AddFoodUnit?foodItemId=" + @Model.FoodItem.Id + "&foodUnitId=" + $("#unit-kind").find(":selected").val() + "&amountGramsPrUnit=" + $("#unit-amount").val()).then(() => window.location.reload())
+        })
+    </script>
+}

@@ -1,23 +1,26 @@
 namespace calcalc.Services;
 
-public class MattilsynetAPIServiceMock:IMattilsynetAPIService
+public class FoodItemsServiceMock : IFooditemsService
 {
     private ILogger _logger;
-    public MattilsynetAPIServiceMock(ILogger<MattilsynetAPIServiceMock> logger)
+    public FoodItemsServiceMock(ILogger<FoodItemsServiceMock> logger)
     {
         _logger = logger;
     }
 
-    public async Task<MattilsynetAPIFoodItemsResult?> GetFoodItems()
+    public async Task<FoodItemsResult?> GetFoodItems()
     {
         _logger.LogInformation("Getting items from mock!");
-        return new MattilsynetAPIFoodItemsResult{Foods = new List<MattilsynetAPIFoodItem> {new MattilsynetAPIFoodItem
+        return new FoodItemsResult
+        {
+            Foods = new List<FoodItem> {new FoodItem
         {
             FoodName = "Popcorntest",
-            
+
             Calories = new Calories {Quantity = 999},
             Portions = new List<Portion>()
-        } } };
+        } }
+        };
     }
 
     public void Dispose()

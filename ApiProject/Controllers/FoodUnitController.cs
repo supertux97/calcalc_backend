@@ -8,40 +8,23 @@ using Microsoft.EntityFrameworkCore;
 using MvcMovie.Data;
 using calcalc.Models;
 using calcalc.ViewModels;
-using Microsoft.IdentityModel.Tokens;
+using calcalc.Repositories;
 
 namespace calcalc.Controllers
 {
     public class FoodUnitController : Controller
     {
-        private readonly CalCalcContext _context;
+        private readonly IFoodUnitRepository _foodUnitRepository;
 
-        public FoodUnitController(CalCalcContext context)
+        public FoodUnitController(IFoodUnitRepository foodUnitRepository)
         {
-            _context = context;
+            _foodUnitRepository = foodUnitRepository;
         }
 
         // GET: FoodUnit
         public async Task<IActionResult> Index()
         {
-            return View(await _context.FoodUnit.Include(fu => fu.Synonyms).ToListAsync());
-        }
-
-        // GET: FoodUnit/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var foodUnit = await _context.FoodUnit.FirstOrDefaultAsync(m => m.Id == id);
-            if (foodUnit == null)
-            {
-                return NotFound();
-            }
-
-            return View(foodUnit);
+            return View(await _foodUnitRepository.GetAllFoodUnitsAsync(includeSynonyms: true));
         }
 
         // GET: FoodUnit/Create
@@ -59,8 +42,7 @@ namespace calcalc.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(foodUnit);
-                await _context.SaveChangesAsync();
+                await _foodUnitRepository.AddFoodUnitAsync(foodUnit);
                 return RedirectToAction(nameof(Index));
             }
             return View(foodUnit);
@@ -74,12 +56,12 @@ namespace calcalc.Controllers
                 return NotFound();
             }
 
-            var foodUnit = await _context.FoodUnit.Include(fu => fu.Synonyms).Where(fu => fu.Id == id).FirstOrDefaultAsync();
+            var foodUnit = await _foodUnitRepository.GetFoodUnitByIdAsync(includeSynonyms: true, id: (int)id);
             if (foodUnit == null)
             {
                 return NotFound();
             }
-            return View( new FoodUnitEditViewmodel {AmountDeciliters = foodUnit.AmountDeciliters, Id = foodUnit.Id, Name = foodUnit.Name , SynonymsCommaSeparated = String.Join(", ", foodUnit.Synonyms.Select(fu => fu.Name))}  );
+            return View(new FoodUnitEditViewmodel { AmountDeciliters = foodUnit.AmountDeciliters, Id = foodUnit.Id, Name = foodUnit.Name, SynonymsCommaSeparated = String.Join(", ", foodUnit.Synonyms.Select(fu => fu.Name)) });
         }
 
         // POST: FoodUnit/Edit/5
@@ -89,15 +71,18 @@ namespace calcalc.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, FoodUnitEditViewmodel foodUnit)
         {
-            var toSave = await _context.FoodUnit.Include(fu => fu.Synonyms).FirstOrDefaultAsync(fu => fu.Id == id); 
+            var toSave = await _foodUnitRepository.GetFoodUnitByIdAsync(includeSynonyms: true, id: (int)id);
             if (toSave is null)
             {
                 return NotFound();
             }
 
-            _context.RemoveRange(toSave.Synonyms);
+            if (!ModelState.IsValid)
+            {
+                return View(new FoodUnitEditViewmodel { Id = foodUnit.Id, Name = foodUnit.Name, SynonymsCommaSeparated = String.Join(", ", toSave.Synonyms.Select(fu => fu.Name)) });
+            }
 
-            if (!foodUnit.SynonymsCommaSeparated.IsNullOrEmpty())
+            if (!String.IsNullOrEmpty(foodUnit.SynonymsCommaSeparated))
             {
                 toSave.Synonyms = foodUnit.SynonymsCommaSeparated.Replace(", ", ",").Split(",")
                     .Select(u => new FoodUnitSynonym { FoodUnitId = id, Name = u }).ToList();
@@ -105,29 +90,23 @@ namespace calcalc.Controllers
 
             toSave.Name = foodUnit.Name;
             toSave.AmountDeciliters = foodUnit.AmountDeciliters;
-
-            if (ModelState.IsValid)
+            try
             {
-                try
-                {
-                    _context.Update(toSave);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!FoodUnitExists(toSave.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
+                await _foodUnitRepository.UpdateFoodUnitAsync(toSave);
             }
-            
-            return View( new FoodUnitEditViewmodel {Id = foodUnit.Id, Name = foodUnit.Name , SynonymsCommaSeparated = String.Join(", ", toSave.Synonyms.Select(fu => fu.Name))}  );
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!await FoodUnitExists(toSave.Id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+            return RedirectToAction(nameof(Index));
+
         }
 
         // GET: FoodUnit/Delete/5
@@ -138,8 +117,7 @@ namespace calcalc.Controllers
                 return NotFound();
             }
 
-            var foodUnit = await _context.FoodUnit
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var foodUnit = await _foodUnitRepository.GetFoodUnitByIdAsync(includeSynonyms: true, id: (int)id);
             if (foodUnit == null)
             {
                 return NotFound();
@@ -153,19 +131,18 @@ namespace calcalc.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var foodUnit = await _context.FoodUnit.FindAsync(id);
+            var foodUnit = await _foodUnitRepository.GetFoodUnitByIdAsync(includeSynonyms: true, id: (int)id);
             if (foodUnit != null)
             {
-                _context.FoodUnit.Remove(foodUnit);
+                await _foodUnitRepository.DeleteFoodUnitAsync(foodUnit);
             }
 
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool FoodUnitExists(int id)
+        private async Task<bool> FoodUnitExists(int id)
         {
-            return _context.FoodUnit.Any(e => e.Id == id);
+            return (await _foodUnitRepository.GetAllFoodUnitsAsync(includeSynonyms: false)).Any(e => e.Id == id);
         }
     }
 }

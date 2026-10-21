@@ -15,91 +15,90 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v9.0
+build_property.EntryPointFilePath = 
 build_property.RootNamespace = calcalc
 build_property.RootNamespace = calcalc
-build_property.ProjectDir = /Users/erlend/Documents/calcalc/calcalc/ApiProject/
+build_property.ProjectDir = /Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/erlend/Documents/calcalc/calcalc/ApiProject
+build_property.MSBuildProjectDirectory = /Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[/Users/erlend/Documents/calcalc/calcalc/ApiProject/Views/FoodItem/Create.cshtml]
+[/Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/Views/FoodItem/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9vZEl0ZW0vQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/erlend/Documents/calcalc/calcalc/ApiProject/Views/FoodItem/Delete.cshtml]
+[/Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/Views/FoodItem/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9vZEl0ZW0vRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/erlend/Documents/calcalc/calcalc/ApiProject/Views/FoodItem/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9vZEl0ZW0vRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/erlend/Documents/calcalc/calcalc/ApiProject/Views/FoodItem/Edit.cshtml]
+[/Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/Views/FoodItem/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9vZEl0ZW0vRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/erlend/Documents/calcalc/calcalc/ApiProject/Views/FoodItem/FoodHasUnit/Create.cshtml]
+[/Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/Views/FoodItem/FoodHasUnit/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9vZEl0ZW0vRm9vZEhhc1VuaXQvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/erlend/Documents/calcalc/calcalc/ApiProject/Views/FoodItem/FoodSynonym/Create.cshtml]
+[/Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/Views/FoodItem/FoodSynonym/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9vZEl0ZW0vRm9vZFN5bm9ueW0vQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/erlend/Documents/calcalc/calcalc/ApiProject/Views/FoodItem/Index.cshtml]
+[/Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/Views/FoodItem/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9vZEl0ZW0vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/erlend/Documents/calcalc/calcalc/ApiProject/Views/FoodUnit/Create.cshtml]
+[/Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/Views/FoodItem/ManageUnits.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9vZEl0ZW0vTWFuYWdlVW5pdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/Views/FoodUnit/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9vZFVuaXQvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/erlend/Documents/calcalc/calcalc/ApiProject/Views/FoodUnit/Delete.cshtml]
+[/Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/Views/FoodUnit/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9vZFVuaXQvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/erlend/Documents/calcalc/calcalc/ApiProject/Views/FoodUnit/Details.cshtml]
+[/Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/Views/FoodUnit/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9vZFVuaXQvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/erlend/Documents/calcalc/calcalc/ApiProject/Views/FoodUnit/Edit.cshtml]
+[/Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/Views/FoodUnit/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9vZFVuaXQvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/erlend/Documents/calcalc/calcalc/ApiProject/Views/FoodUnit/Index.cshtml]
+[/Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/Views/FoodUnit/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9vZFVuaXQvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/erlend/Documents/calcalc/calcalc/ApiProject/Views/Home/Index.cshtml]
+[/Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/erlend/Documents/calcalc/calcalc/ApiProject/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/erlend/Documents/calcalc/calcalc/ApiProject/Views/Shared/Error.cshtml]
+[/Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/erlend/Documents/calcalc/calcalc/ApiProject/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/erlend/Documents/calcalc/calcalc/ApiProject/Views/_ViewImports.cshtml]
+[/Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/erlend/Documents/calcalc/calcalc/ApiProject/Views/_ViewStart.cshtml]
+[/Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/erlend/Documents/calcalc/calcalc/ApiProject/Views/Shared/_Layout.cshtml]
+[/Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-pfaptgxv40

@@ -1,36 +1,27 @@
-using System.Configuration;
 using System.Globalization;
 using System.Text.Json.Serialization;
-using calcalc.BackgroundJobs;
+using calcalc.Repositories;
 using calcalc.Services;
-using Hangfire;
-using Hangfire.Storage.SQLite;
+using Microsoft.AspNetCore.Hosting.StaticWebAssets;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
-using Microsoft.Extensions.DependencyInjection;
 using MvcMovie.Data;
-using Newtonsoft.Json;
 using Serilog;
-using Serilog.Events;
+using Serilog.Exceptions;
 
-var  MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
-var config = new ConfigurationBuilder().AddEnvironmentVariables().
-    AddUserSecrets<Program>().Build();
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
 var builder = WebApplication.CreateBuilder(args);
-Console.WriteLine($"Db is {config["CalcalcSqldb"]}");
+
+var config = new ConfigurationBuilder()
+    .AddJsonFile("appsettings.json", optional: false)
+    .AddJsonFile($"appsettings{builder.Environment.EnvironmentName}.json", optional: true)
+    .AddEnvironmentVariables()
+    .AddUserSecrets<Program>().Build();
+
 builder.Services.AddDbContext<CalCalcContext>(options =>
-    options.UseSqlServer(config["CalcalcSqldb"]));
-
-/*
-builder.Services.AddHangfire(configuration => configuration
-    .UseSimpleAssemblyNameTypeSerializer()
-    .UseRecommendedSerializerSettings()
-    .UseSQLiteStorage("hangfire_taskqueue")); // Replace with your desired database file path
-
-*/
+    options.UseNpgsql(config["Database:ConnectionString"]));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews().AddJsonOptions(options =>
@@ -39,25 +30,31 @@ builder.Services.AddControllersWithViews().AddJsonOptions(options =>
     options.JsonSerializerOptions.Converters.Add(enumConverter);
 });
 
-// builder.Services.AddHangfireServer();
 builder.Services.AddHttpClient();
 // builder.Services.AddHttpLogging(o => { });
 
-var logger = new LoggerConfiguration().ReadFrom.Configuration(builder.Configuration).CreateLogger();
+var logger = new LoggerConfiguration()
+    .Enrich.WithExceptionDetails()
+    .ReadFrom.Configuration(config).CreateLogger();
 
+
+builder.Logging.ClearProviders();
 builder.Logging.AddSerilog(logger);
 
-builder.Host.UseSerilog( (ctx, conf) => conf.ReadFrom.Configuration(ctx.Configuration) );
 
 // Configure the HTTP request pipeline.
 if (builder.Environment.IsDevelopment())
 {
-    builder.Services.AddScoped<IMattilsynetAPIService, MattilsynetAPIServiceMock>();
+    builder.Services.AddScoped<IFooditemsService, FoodItemsServiceMock>();
 }
 else
 {
     Console.WriteLine("PROD!!!!");
-    builder.Services.AddScoped<IMattilsynetAPIService, MattilsynetAPIService>();
+    builder.Services.AddScoped<IFooditemsService, MattilsynetAPIService>();
+    builder.Services.AddScoped<IFoodItemRepository, EFCorePsqlFoodItemRepository>();
+    builder.Services.AddScoped<IFoodUnitRepository, EFCoreFoodUnitRepository>();
+    builder.Services.AddScoped<IFoodSynonymRepository, EFCoreFoodSynonymRepository>();
+    builder.WebHost.UseStaticWebAssets();
 }
 
 var app = builder.Build();
@@ -72,11 +69,10 @@ else
     app.UseExceptionHandler("/Home/Error");
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
+    app.UseHttpsRedirection();
 }
 
-app.UseHttpsRedirection();
 app.UseRouting();
-//app.UseHangfireDashboard();
 
 
 app.UseAuthorization();
@@ -96,12 +92,6 @@ var localizationOptions = new RequestLocalizationOptions
     SupportedUICultures = new List<CultureInfo> { defaultCulture }
 };
 app.UseRequestLocalization(localizationOptions);
-
-
-/*
-BackgroundJob.Enqueue<MattilsynetSync>(
-    (mtc) => mtc.DoSync());  
-    */
 
 Console.WriteLine("Started!");
 app.Run();
