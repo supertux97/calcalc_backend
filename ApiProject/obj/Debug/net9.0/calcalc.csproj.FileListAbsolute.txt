@@ -259,7 +259,6 @@
 /Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/obj/Debug/net9.0/scopedcss/bundle/calcalc.styles.css
 /Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/obj/Debug/net9.0/scopedcss/projectbundle/calcalc.bundle.scp.css
-/Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/obj/Debug/net9.0/compressed/0ut3lltbzd-{0}-k669bwd23y-k669bwd23y.gz
 /Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/obj/Debug/net9.0/compressed/ye1el0nkb9-{0}-61n19gt1b8-61n19gt1b8.gz
 /Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/obj/Debug/net9.0/compressed/8qiy2uaggn-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 /Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/obj/Debug/net9.0/compressed/mileg3dn6x-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -671,3 +670,7 @@
 /Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/obj/Debug/net9.0/calcalc.genruntimeconfig.cache
 /Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/obj/Debug/net9.0/ref/calcalc.dll
 /Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/bin/Debug/net9.0/Serilog.Exceptions.dll
+/Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/obj/Debug/net9.0/compressed/0ut3lltbzd-{0}-793e07hd7y-793e07hd7y.gz
+/Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/bin/Debug/net9.0/package-lock.json
+/Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/bin/Debug/net9.0/package.json
+/Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/obj/Debug/net9.0/compressed/ltym0rztjf-{0}-7bm5udxpyg-7bm5udxpyg.gz

@@ -7,7 +7,7 @@
     <title>@ViewData["Title"] - calcalc</title>
     <script type="importmap"></script>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/calcalc.styles.css" asp-append-version="true" />
 </head>
 
@@ -21,15 +21,15 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                    <ul class="navbar-nav flex gap-2">
                         <li>
-                            <a asp-controller="FoodItem" asp-action="Index">Matvarer</a>
+                            <a class="" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li>
+                            <a class="" asp-controller="FoodItem" asp-action="Index">Matvarer</a>
                         </li>
                         <li>
                             <a asp-controller="FoodUnit" asp-action="Index">Måleenheter</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                     </ul>
                 </div>

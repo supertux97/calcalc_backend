@@ -16,7 +16,8 @@ public class IngredientsParseResult
 
 public class Ingredients
 {
-    public static IngredientsParseResult ParseIngredients(List<string> ingredientsLines, List<string> availibleFoodUnitsNames)
+
+    public static IngredientsParseResult ParseIngredients(IIngredientLanguageSpecificParserStrategy languageSpecificParser, List<string> ingredientsLines, List<string> availibleFoodUnitsNames)
     {
         var result = new List<Ingredient>();
         var idx = 0;
@@ -32,22 +33,14 @@ public class Ingredients
             lineCleaned = Regex.Replace(lineCleaned, "^([0-9,]+)([^0-9]+) ", "$1 $2 ");
 
 
-            var fillerwords = new List<string> { "til pensling", "til pynt", "til steking", "til servering", "til dekorering", "til anretning" };
-            fillerwords.ForEach(fw => lineCleaned = lineCleaned.Replace($", {fw}", "").Replace(fw, ""));
+            var fillerwords = languageSpecificParser.GetFillerWords();
+            fillerwords.ForEach(fw => lineCleaned = lineCleaned.Replace($", {fw}", "").Replace(fw + " ", ""));
 
             // are to be removed
-            var preparationWords = new List<string>
-            {"malt","malte","hel","hele","i biter","rompemperert","romtempererte",
-                "revet", "revede", "strimlet", "strimlede", "ternet", "i terninger", "oppskårne", "oppskåret",
-                "finhakket", "finhakkede", "grovhakket", "grovhakkede", "skivet", "skivede","pisket","piskede","stekt","stekte","oppkuttet","oppkuttede","vasket","vaskede","kuttet i staver","kuttet i ringer",
-                "rørt","rørte","lett pisket","lett piskede","sammenrørt","sammenrørte","delt i to","delt i tre","delt i båter","i båter","i halve","delt i halve", "most","moste","banket","bankede",
-                "varmet","varmede","lunkne","romtempererte","i romtemperatur","avkjølt","avkjølte","frossen","frossne","hakket","hakkede","kuttet","kuttede"
-            };
+            var preparationWords = languageSpecificParser.GetPreparationWords();
             preparationWords.ForEach(pw => lineCleaned = lineCleaned.Replace($", {pw}", "").Replace(pw, ""));
 
-            var lineHasOptionalIngredient =
-                lineCleaned.Contains("kan sløyfes") || lineCleaned.Contains("valgfritt");
-            if (lineHasOptionalIngredient)
+            if (languageSpecificParser.GetLineHasOptionalIngredient(lineCleaned))
             {
                 return new IngredientsParseResult
                 {
@@ -61,7 +54,7 @@ public class Ingredients
             // remove parenteces and stuff within
             lineCleaned = Regex.Replace(lineCleaned, "\\(.*\\)$", "").Trim();
 
-            if (lineCleaned.Contains(" eller "))
+            if (languageSpecificParser.GetLineHasAlternativesIngredients(lineCleaned))
             {
                 return new IngredientsParseResult
                 {
@@ -71,8 +64,7 @@ public class Ingredients
                 };
             }
 
-            var ambigiousWords = new List<string> { "noen", "mye", "passe", "litt", "rikelig", "tilstrekelig", "en del", "et par", "en god del", "massevis", "en neve", "en håndfull", "en god håndfull", "en god neve", "så mye du vil", "nok" };
-            if (ambigiousWords.Any(w => lineCleaned.Contains(w)))
+            if (languageSpecificParser.GetLineHasInacurateUnits(lineCleaned))
             {
                 return new IngredientsParseResult
                 { ErrorCode = IngredientsError.INACCURATE_UNIT, ErrorMessage = createErrorForCurrLine("inneholder et unøyaktig mål, feks 'en neve'. Endre til noe mer presist, feks '100g'") };
@@ -84,7 +76,7 @@ public class Ingredients
                 return new IngredientsParseResult
                 {
                     ErrorCode = IngredientsError.AMOUNT_RANGE,
-                    ErrorMessage = createErrorForCurrLine("inneholder et antall ingrdienser som kan variere, feks 1-2 tomater." +
+                    ErrorMessage = createErrorForCurrLine("inneholder et antall ingrdienser som kan variere, feks 1-2 tomater. " +
                                                                    $"Velg et antall (feks 2 tomater) og prøv på nytt")
                 };
             }
@@ -111,16 +103,14 @@ public class Ingredients
             var parts = Regex.Match(lineCleaned, $"^([^ ]+)\\s+([^ ]+)\\s+(.+)$");
             if (!parts.Groups[1].Success || !parts.Groups[2].Success || !parts.Groups[3].Success)
             {
-                return new IngredientsParseResult { ErrorCode = IngredientsError.INVALID_FORMAT, ErrorMessage = createErrorForCurrLine("må ha formatet ANTALL ENHET INGREDIENS") };
+                return new IngredientsParseResult { ErrorCode = IngredientsError.INVALID_FORMAT, ErrorMessage = createErrorForCurrLine("må ha formatet [ANTALL] [ENHET] [INGREDIENS] feks 1 stk egg") };
             }
 
             decimal amount = 0m;
             if (!Decimal.TryParse(parts.Groups[1].Value, out amount))
             {
-                return new IngredientsParseResult { ErrorCode = IngredientsError.INVALID_FORMAT_AMOUNT, ErrorMessage = createErrorForCurrLine(",kunne ikke lese antall. Linjen må ha formatet ANTALL ENHET INGREDIENS") };
+                return new IngredientsParseResult { ErrorCode = IngredientsError.INVALID_FORMAT_AMOUNT, ErrorMessage = createErrorForCurrLine(",kunne ikke lese antall. Linjen må ha formatet [ANTALL] [ENHET] [INGREDIENS] feks 1 stk egg") };
             }
-            Console.WriteLine("Antall ble!");
-            Console.WriteLine(amount);
 
             var unit = parts.Groups[2].Value;
             var name = parts.Groups[3].Value;

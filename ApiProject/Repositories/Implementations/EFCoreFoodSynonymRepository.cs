@@ -12,7 +12,7 @@ public class EFCoreFoodSynonymRepository : IFoodSynonymRepository
         _context = context;
     }
 
-    public async Task<IEnumerable<FoodSynonym>> GetAllFoodItemsAsync()
+    public async Task<IEnumerable<FoodSynonym>> GetAllSynonymsItemsAsync()
     {
         return await _context.FoodSynonym.ToListAsync();
     }

@@ -4,5 +4,5 @@ namespace calcalc.Repositories;
 
 public interface IFoodSynonymRepository
 {
-    Task<IEnumerable<FoodSynonym>> GetAllFoodItemsAsync();
+    Task<IEnumerable<FoodSynonym>> GetAllSynonymsItemsAsync();
 }

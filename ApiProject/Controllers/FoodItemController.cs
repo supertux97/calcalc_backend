@@ -28,7 +28,7 @@ namespace calcalc.Controllers
         // GET: FoodItem
         public async Task<IActionResult> Index(string nameFilterString, bool isAddedByUserFilter, bool hasSynonymFilter, string notification, int paginationPageNo = 1)
         {
-            var PAGINATION_ITEMS_PR_PAGE = 20;
+            var PAGINATION_ITEMS_PR_PAGE = 10;
 
             var searchResults = await _foodItemRepository.SearchForFooditems(
                 includeSynonyms: true,

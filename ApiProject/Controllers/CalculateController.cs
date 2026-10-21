@@ -1,6 +1,7 @@
 using System.Text.RegularExpressions;
 using calcalc.Models;
 using calcalc.Repositories;
+using Humanizer;
 using Microsoft.AspNetCore.Mvc;
 
 namespace calcalc.Controllers;
@@ -11,13 +12,15 @@ public class CalculateController : Controller
     private readonly IFoodItemRepository _foodItemRepository;
     private readonly IFoodUnitRepository _foodUnitRepository;
     private readonly IFoodSynonymRepository _foodSynonymRepository;
+    private readonly IIngredientLanguageSpecificParserStrategy _languageSpecificParserStrategy;
 
-    public CalculateController(IFoodItemRepository foodItemRepository, IFoodUnitRepository foodUnitRepository, IFoodSynonymRepository foodSynonymRepository, ILogger<CalculateController> log)
+    public CalculateController(IFoodItemRepository foodItemRepository, IFoodUnitRepository foodUnitRepository, IFoodSynonymRepository foodSynonymRepository, ILogger<CalculateController> log, IIngredientLanguageSpecificParserStrategy ingredientLanguageSpecificParserStrategy)
     {
         _foodItemRepository = foodItemRepository;
         _foodUnitRepository = foodUnitRepository;
         _foodSynonymRepository = foodSynonymRepository;
         _log = log;
+        _languageSpecificParserStrategy = ingredientLanguageSpecificParserStrategy;
     }
 
     [HttpPost]
@@ -27,27 +30,33 @@ public class CalculateController : Controller
         {
             return BadRequest(ModelState);
         }
+
         var unitsInDatabase = await _foodUnitRepository.GetAllFoodUnitsAsync(includeSynonyms: true);
-        var unitsWithSynonymsInDatabaseNames = new List<string>();
+        var unitsAndSynonymsInDatabaseNames = new List<string>();
         foreach (var unit in unitsInDatabase)
         {
-            unitsWithSynonymsInDatabaseNames.Add(unit.Name);
+            unitsAndSynonymsInDatabaseNames.Add(unit.Name);
             foreach (var synonym in unit.Synonyms)
             {
-                unitsWithSynonymsInDatabaseNames.Add(synonym.Name);
+                unitsAndSynonymsInDatabaseNames.Add(synonym.Name);
             }
         }
 
-        var ingredients = Ingredients.ParseIngredients(items.Items, unitsWithSynonymsInDatabaseNames);
+        var ingredients = Ingredients.ParseIngredients(_languageSpecificParserStrategy, items.Items, unitsAndSynonymsInDatabaseNames);
         if (ingredients.ErrorCode != null)
         {
             return new CalculateCaloriesResult { ErrorCode = ingredients.ErrorCode, ErrorMessage = ingredients.ErrorMessage };
         }
 
         var foodItemsInDatabase = await _foodItemRepository.GetAllFoodItemsAsync(includeSynonyms: true, includeUnits: true);
-        // find corresponding items
-        var foundFoodItems = new List<FoodItem>();
+        var synonymsInDatabase = await _foodSynonymRepository.GetAllSynonymsItemsAsync();
 
+        // ====
+        // match ingredient to food item
+        // ====
+        var foundFoodItemForIngredientLines = new List<FoodItem>();
+
+        // cleans out unneeded information
         bool namesMatches(string dbName, string searchName)
         {
             return Regex.Replace(dbName.ToLower(), ", .*$", "").Equals(searchName.ToLower()) ||
@@ -55,17 +64,19 @@ public class CalculateController : Controller
                    Regex.Replace(dbName.ToLower(), "^([^,]+), ([^,]+)$", "$2 $1").Equals(searchName.ToLower());
         }
 
+        var ingredientInformation = new List<IngredientInfo>();
+
         int idxToFind = -1;
         foreach (var toFind in ingredients.Ingredients)
         {
-            // first with synonyms, they work as kind of an override
+            // first check with synonyms, they have priority over normal name
             idxToFind++;
             bool foundFoodItem = false;
-            foreach (var synonym in await _foodSynonymRepository.GetAllFoodItemsAsync())
+            foreach (var synonym in synonymsInDatabase)
             {
                 if (namesMatches(synonym.Name, toFind.Name))
                 {
-                    foundFoodItems.Add(foodItemsInDatabase.First(fi => fi.Id == synonym.FoodItemId));
+                    foundFoodItemForIngredientLines.Add(foodItemsInDatabase.First(fi => fi.Id == synonym.FoodItemId));
                     foundFoodItem = true;
                     break;
                 }
@@ -75,11 +86,13 @@ public class CalculateController : Controller
             {
                 continue;
             }
+
+            // then check with normal name
             foreach (var inDatabase in foodItemsInDatabase)
             {
                 if (namesMatches(inDatabase.Name, toFind.Name))
                 {
-                    foundFoodItems.Add(inDatabase);
+                    foundFoodItemForIngredientLines.Add(inDatabase);
                     foundFoodItem = true;
                     break;
                 }
@@ -91,14 +104,15 @@ public class CalculateController : Controller
             }
         }
 
-        double calories = 0d;
+        double caloriesTotal = 0d;
 
         for (var idx = 0; idx < ingredients.Ingredients.Count; idx++)
         {
-            var foodItem = foundFoodItems[idx];
+            var foodItem = foundFoodItemForIngredientLines[idx];
             var ingredient = ingredients.Ingredients[idx];
 
-            FoodHasUnit foundUnit = null;
+            // find the unit for the ingredient line
+            FoodHasUnit? foundUnit = null;
             foreach (var foodHasUnit in foodItem.Units)
             {
                 if (foundUnit is not null)
@@ -122,7 +136,7 @@ public class CalculateController : Controller
                 return new CalculateCaloriesResult()
                 {
                     ErrorCode = IngredientsError.UNIT_NOT_FOUND,
-                    ErrorMessage = $"Linje {idx + 1}: Enheten {ingredient.Unit} for matvaren {ingredient.Name} er ikke støttet. Forsøk med en annen enhet."
+                    ErrorMessage = $"Ingredient {idx + 1}: Enheten {ingredient.Unit} for matvaren {ingredient.Name} er ikke støttet. Forsøk med en annen enhet."
                 };
             }
 
@@ -135,14 +149,31 @@ public class CalculateController : Controller
             {
                 grams = (ingredient.Amount * foundUnit.GramsPerUnit);
             }
-            calories += (double)(foodItem.Calories * (grams / 100m));
+            double calories = (double)(foodItem.Calories * (grams / 100m));
+            caloriesTotal += calories;
 
+            // add total calories after when we have gone trough all items
+            ingredientInformation.Add(new IngredientInfo
+            {
+                IngredientName = ingredient.Name,
+                Unit = ingredient.Unit,
+                Amount = ingredient.Amount,
+                Calories = calories,
+                ReadMoreUrl = foodItem.InformationUrl,
+            });
+
+        }
+
+        foreach (var ingredientInfo in ingredientInformation)
+        {
+            ingredientInfo.PercentageOfCalories = (ingredientInfo.Calories / caloriesTotal) * 100d;
         }
 
         return new CalculateCaloriesResult()
         {
-            IngredientsFullNames = foundFoodItems.Select(x => x.Name).ToList(),
-            Calories = calories
+            IngredientsFullNames = foundFoodItemForIngredientLines.Select(x => x.Name).ToList(),
+            IngredientsInformation = ingredientInformation,
+            Calories = caloriesTotal
         };
     }
 }

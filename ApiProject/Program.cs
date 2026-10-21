@@ -54,6 +54,7 @@ else
     builder.Services.AddScoped<IFoodItemRepository, EFCorePsqlFoodItemRepository>();
     builder.Services.AddScoped<IFoodUnitRepository, EFCoreFoodUnitRepository>();
     builder.Services.AddScoped<IFoodSynonymRepository, EFCoreFoodSynonymRepository>();
+    builder.Services.AddScoped<IIngredientLanguageSpecificParserStrategy, IngredientLanguageSpecificParserStrategyNorwegian>();
     builder.WebHost.UseStaticWebAssets();
 }
 
