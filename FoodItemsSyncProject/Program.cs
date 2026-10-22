@@ -120,7 +120,7 @@ public class FoodItemsSync
 
         // then add the units for the items
         int unitsToAdd = 0;
-        foreach (calcalc.Services.FoodItem apiItem in result.Foods)
+        foreach (calcalc.Services.FoodItem apiItem in result.Foods.GetRange(0, 10))
         {
             var foodItem = await (from f in dbContext.FoodItem where f.Name == apiItem.FoodName select f).Include(f => f.Units).FirstOrDefaultAsync();
             if (foodItem is null)
