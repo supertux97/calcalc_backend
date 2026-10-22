@@ -20,6 +20,7 @@ public class UnitCalculateCalories
     [Fact]
     public async Task TestCalculateCalories()
     {
+        Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("nb-NO");
 
         var controller = CommonUtils.GetCalculateControllerWithInjectedServices(_log);
         var result1 = await controller.CalculateCalories(new CalculationItems { Items = new List<string> { "500 gram havregryn", "1,5 desiliter havregryn" } });
@@ -31,7 +32,7 @@ public class UnitCalculateCalories
     [Fact]
     public async Task TestCalculateCaloriesSynonymsUnits()
     {
-
+        Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("nb-NO");
         var controller = CommonUtils.GetCalculateControllerWithInjectedServices(_log);
         // also test units that ends with a dot, eg dl.
         var result1 = await controller.CalculateCalories(new CalculationItems { Items = new List<string> { "500 g havregryn", "1,5 dl. havregryn", "2.5 dl havregryn" } });
