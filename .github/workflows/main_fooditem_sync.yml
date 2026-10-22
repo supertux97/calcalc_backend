@@ -25,11 +25,11 @@ jobs:
         run: dotnet run
       - name: Get log file anme
         id: logfilename
-        run: echo "::set-output name=logfilename::debug$(date +'%Y%m%d').log"
+        run: echo "LOGFILENAME=debug$(date +'%Y%m%dT%H:%M:%S').log" >> $GITHUB_ENV
       - name: Upload dotnet test results
         uses: actions/upload-artifact@v4
         with:
-          name: dotnet-results-${{ matrix.dotnet-version }}
-          path:  logs/${{steps.logfilename.outputs.logfilename}}
+          name: sync-results
+          path:  logs/$LOGFILENAME
         # Use always() to always run this step to publish test results when there are test failures
         if: ${{ always() }}
