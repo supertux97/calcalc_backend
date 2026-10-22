@@ -89,10 +89,11 @@ public class FoodItemsSync
         logger.LogInformation("FoodItemsSync: Adding food items to database");
         // first add the actual item
         int skippedItems = 0;
+        var foodNamesInDb = await dbContext.FoodItem.AsNoTracking().Select(fi => fi.Name).ToListAsync();
         foreach (calcalc.Services.FoodItem apiItem in result.Foods)
         {
             // food item with this name already added
-            if ((from f in dbContext.FoodItem where f.Name == apiItem.FoodName select f).Any())
+            if (foodNamesInDb.Any(fn => fn == apiItem.FoodName))
             {
                 skippedItems++;
                 continue;
@@ -112,6 +113,8 @@ public class FoodItemsSync
         await dbContext.AddRangeAsync(toAdd);
 
         logger.LogInformation($"FoodItemsSync: Got {toAdd.Count} new items to add to database. Skipped {skippedItems} items.");
+        await dbContext.SaveChangesAsync();
+        logger.LogInformation($"FoodItemsSync: Saved new items to database");
 
         logger.LogInformation("FoodItemsSync: Adding units to food items to database");
 

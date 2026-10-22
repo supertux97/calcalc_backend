@@ -18,9 +18,10 @@ public class EFCoreFoodUnitRepository : IFoodUnitRepository
         await _context.SaveChangesAsync();
     }
 
-    public Task DeleteFoodUnitAsync(FoodUnit foodUnit)
+    public async Task DeleteFoodUnitAsync(FoodUnit foodUnit)
     {
-        throw new NotImplementedException();
+        _context.Remove(foodUnit);
+        await _context.SaveChangesAsync();
     }
 
     public async Task<List<FoodUnit>> GetAllFoodUnitsAsync(bool includeSynonyms)

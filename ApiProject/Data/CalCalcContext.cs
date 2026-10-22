@@ -22,11 +22,11 @@ namespace MvcMovie.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.HasDbFunction(() => Levensthein(default, default))
+            modelBuilder.HasDbFunction(() => Fuzzysearch(default, default))
             .HasName("fuzzysearch")
             .HasSchema("public");
         }
-        public int Levensthein(string input1, string input2) => throw new NotSupportedException();
+        public int Fuzzysearch(string input1, string input2) => throw new NotSupportedException();
 
         public virtual DbSet<FoodItem> FoodItem { get; set; } = default!;
         public DbSet<calcalc.Models.FoodUnit> FoodUnit { get; set; } = default!;

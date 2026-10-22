@@ -40,7 +40,7 @@ public class EFCorePsqlFoodItemRepository : IFoodItemRepository
         return await item.FirstOrDefaultAsync();
     }
 
-    public async Task AddFoodItemAsync(FoodItem foodItem)
+    public async Task<FoodItemAddUpdateResult> AddFoodItemAsync(FoodItem foodItem)
     {
         // every new food item by default has grams unit
         if (!foodItem.Units.Any(u => u.FoodUnit.Name == "gram"))
@@ -49,18 +49,38 @@ public class EFCorePsqlFoodItemRepository : IFoodItemRepository
             foodItem.Units.Add(new FoodHasUnit { FoodUnitId = gramUnit.Id, FoodUnit = gramUnit, GramsPerUnit = 1 });
         }
 
+        var res = new FoodItemAddUpdateResult();
+        var validateError = await ValidateAddEditFoodItem(foodItem);
+        res.Error = validateError;
+        if (res.Error != null)
+        {
+            return res;
+        }
+
         _context.FoodItem.Add(foodItem);
         await _context.SaveChangesAsync();
+        return res;
     }
 
-    public async Task<FoodItemUpdateResult> UpdateFoodItemAsync(FoodItem foodItem)
+    private async Task<FoodItemUpdateResultErrorCause?> ValidateAddEditFoodItem(FoodItem foodItem)
     {
-        var res = new FoodItemUpdateResult();
+        var isEdit = foodItem.Id > 0;
+
+        var existingFoodItemWithSameName = await _context.FoodItem.Where(fi => (!isEdit || fi.Id != foodItem.Id) && fi.Name.ToLower() == foodItem.Name.ToLower()).FirstOrDefaultAsync() != null;
+        if (existingFoodItemWithSameName)
+        {
+            return FoodItemUpdateResultErrorCause.FOOD_ITEM_NAME_ALREADY_EXISTS;
+        }
+        var existingFoodSynonymItemWithSameName = _context.FoodSynonym.Any(fs => fs.Name.ToLower() == foodItem.Name.ToLower());
+        if (existingFoodSynonymItemWithSameName)
+        {
+            return FoodItemUpdateResultErrorCause.FOOD_ITEM_NAME_ALREADY_EXISTS_IN_SYNONYM;
+        }
+
         var synonymsNames = foodItem.Synonyms.Select(s => s.Name);
         if (synonymsNames.Distinct().Count() != synonymsNames.Count())
         {
-            res.Error = FoodItemUpdateResultErrorCause.DUPLICATE_SYNONYMS_TO_ADD;
-            return res;
+            return FoodItemUpdateResultErrorCause.DUPLICATE_SYNONYMS_TO_ADD;
         }
 
         foreach (var newSynonym in foodItem.Synonyms)
@@ -68,27 +88,25 @@ public class EFCorePsqlFoodItemRepository : IFoodItemRepository
             var synonymAlreadyExists = _context.FoodItem.Include(fi => fi.Synonyms).Any(existingFoodItem => existingFoodItem.Id != foodItem.Id && existingFoodItem.Synonyms.Any(existingSynonym => existingSynonym.Name.ToLower() == newSynonym.Name.ToLower()));
             if (synonymAlreadyExists)
             {
-                res.Error = FoodItemUpdateResultErrorCause.SYNONYM_ALREADY_EXISTS;
-                return res;
+                return FoodItemUpdateResultErrorCause.SYNONYM_ALREADY_EXISTS;
             }
             var synonymExistsAsFoodName = await _context.FoodItem.Where(existingFoodItem => foodItem.Id != existingFoodItem.Id && existingFoodItem.Name.ToLower() == newSynonym.Name.ToLower()).FirstOrDefaultAsync() != null;
             if (synonymExistsAsFoodName)
             {
-                res.Error = FoodItemUpdateResultErrorCause.SYNONYM_ALREADY_EXISTS_AS_FOOD_ITEM_NAME;
-                return res;
+                return FoodItemUpdateResultErrorCause.SYNONYM_ALREADY_EXISTS_AS_FOOD_ITEM_NAME;
             }
         }
+        return null;
+    }
 
-
-        var existingFoodItemWithSameName = await _context.FoodItem.Where(fi => fi.Id != foodItem.Id && fi.Name.ToLower() == foodItem.Name.ToLower()).FirstOrDefaultAsync() != null;
-        if (existingFoodItemWithSameName)
+    public async Task<FoodItemAddUpdateResult> UpdateFoodItemAsync(FoodItem foodItem)
+    {
+        var res = new FoodItemAddUpdateResult();
+        var validateError = await ValidateAddEditFoodItem(foodItem);
+        res.Error = validateError;
+        if (res.Error != null)
         {
-            res.Error = FoodItemUpdateResultErrorCause.FOOD_ITEM_NAME_ALREADY_EXISTS;
-        }
-        var existingFoodSynonymItemWithSameName = _context.FoodSynonym.Any(fs => fs.Name.ToLower() == foodItem.Name.ToLower());
-        if (existingFoodSynonymItemWithSameName)
-        {
-            res.Error = FoodItemUpdateResultErrorCause.FOOD_ITEM_NAME_ALREADY_EXISTS_IN_SYNONYM;
+            return res;
         }
 
         _context.FoodItem.Update(foodItem);
@@ -112,12 +130,12 @@ public class EFCorePsqlFoodItemRepository : IFoodItemRepository
         if (!String.IsNullOrEmpty(searchStr))
         {
             foodItemsQueryWithSearch = foodItemsQueryWithSearch
-                .Where(fi => _context.Levensthein(fi.NameWithoutDetails.ToLower(), searchStr.ToLower()) < FUZZY_SEARCH_DIFFERENCES_THRESHOLD
+                .Where(fi => _context.Fuzzysearch(fi.NameWithoutDetails.ToLower(), searchStr.ToLower()) < FUZZY_SEARCH_DIFFERENCES_THRESHOLD
                             || fi.NameWithoutDetails.ToLower().Contains(searchStr.ToLower())
             );
             foodItemsQueryWithSearch = foodItemsQueryWithSearch.OrderByDescending(i => i.NameWithoutDetails.ToLower().StartsWith(searchStr.ToLower()))
                 .ThenByDescending(i => i.NameWithoutDetails.Contains(searchStr.ToLower()) ? 1 : -1)
-                .ThenByDescending(i => -_context.Levensthein(i.NameWithoutDetails.ToLower(), searchStr.ToLower()));
+                .ThenByDescending(i => -_context.Fuzzysearch(i.NameWithoutDetails.ToLower(), searchStr.ToLower()));
         }
         if (onlyHasSynonyms)
         {

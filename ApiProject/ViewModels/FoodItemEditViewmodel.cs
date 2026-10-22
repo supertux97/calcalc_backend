@@ -15,7 +15,7 @@ public class FoodItemEditViewmodel
     public bool UserAdded { get; set; }
 
     public string? ReturnUrl { get; set; }
-    public FoodItemUpdateResult? UpdateResult { get; set; }
+    public FoodItemAddUpdateResult? UpdateResult { get; set; }
 
     public List<FoodSynonym> Synonyms { get; set; } = new List<FoodSynonym>();
     public List<FoodHasUnit> Units { get; set; } = new List<FoodHasUnit>();

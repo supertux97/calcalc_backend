@@ -109,9 +109,16 @@ namespace calcalc.Controllers
             if (ModelState.IsValid)
             {
                 foodItem.UserAdded = true;
-                var newItem = new FoodItem { NameWithoutDetails = foodItem.Name, Name = foodItem.Name, Calories = foodItem.Calories, Created = DateTime.UtcNow };
-                await _foodItemRepository.AddFoodItemAsync(newItem);
-                return RedirectToAction(nameof(Index));
+                var newItem = new FoodItem { UserAdded = true, NameWithoutDetails = foodItem.Name, Name = foodItem.Name, Calories = foodItem.Calories, Created = DateTime.UtcNow };
+                var addResult = await _foodItemRepository.AddFoodItemAsync(newItem);
+                if (addResult.Error == null)
+                {
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    return View(new FoodItemCreateViewModel { AddResult = addResult, FoodItem = foodItem });
+                }
             }
             return View(new FoodItemCreateViewModel { FoodItem = foodItem });
         }
@@ -150,6 +157,7 @@ namespace calcalc.Controllers
             {
                 return NotFound();
             }
+            foodItem.UserAdded = foodItemDb.UserAdded;
 
             if (!String.IsNullOrEmpty(foodItem.SynonymsCommaseparated))
             {
@@ -164,31 +172,18 @@ namespace calcalc.Controllers
 
             if (ModelState.IsValid)
             {
-                try
+                if (foodItemDb.UserAdded)
                 {
-                    if (foodItemDb.UserAdded)
-                    {
-                        foodItemDb.Name = foodItem.Name;
-                        foodItemDb.Calories = foodItem.Calories;
-                    }
-                    foodItemDb.Updated = DateTime.UtcNow;
-                    await _foodItemRepository.UpdateFoodItemAsync(foodItemDb);
+                    foodItemDb.Name = foodItem.Name;
+                    foodItemDb.Calories = foodItem.Calories;
                 }
-                catch (DbUpdateConcurrencyException)
+                foodItemDb.Updated = DateTime.UtcNow;
+                foodItem.UpdateResult = await _foodItemRepository.UpdateFoodItemAsync(foodItemDb);
+                if (foodItem.UpdateResult.Error != null)
                 {
-                    if (!await FoodItemExists(foodItemDb.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    return View(foodItem);
                 }
-                if (foodItem.ReturnUrl != null)
-                {
-                    return Redirect(foodItem.ReturnUrl);
-                }
+
                 return RedirectToAction(nameof(Index));
             }
             return View(foodItem);

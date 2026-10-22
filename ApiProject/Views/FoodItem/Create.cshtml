@@ -1,4 +1,5 @@
 @model calcalc.ViewModels.FoodItemCreateViewModel
+@using calcalc.Repositories;
 
 @{
     ViewData["Title"] = "Create";
@@ -30,6 +31,27 @@
                 <div class="form-group">
                     <input type="submit" value="Create" class="btn btn-primary" />
                 </div>
+
+
+                @if (Model?.AddResult?.Error != null)
+                {
+                    <div role="alert">
+                        @switch (Model?.AddResult?.Error)
+                        {
+                            case FoodItemUpdateResultErrorCause.FOOD_ITEM_NAME_ALREADY_EXISTS:
+                                <div>
+                                    A food item with this name already exists
+                                </div>
+                                break;
+                            case FoodItemUpdateResultErrorCause.FOOD_ITEM_NAME_ALREADY_EXISTS_IN_SYNONYM:
+                                <div>
+                                    This name is used as synonym for other food item
+                                </div>
+                                break;
+                        }
+                    </div>
+                }
+
             </form>
         </div>
     
