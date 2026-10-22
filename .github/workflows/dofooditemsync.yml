@@ -12,7 +12,7 @@ jobs:
       contents: read #This is required for actions/checkout
     defaults:
       run:
-        working-directory: ./FoodItemssyncProject
+        working-directory: ./FoodItemsSyncProject
       
 
     steps:
