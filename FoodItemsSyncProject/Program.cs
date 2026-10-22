@@ -20,6 +20,7 @@ public class FoodItemsSync
     .ConfigureAppConfiguration((context, config) =>
     {
         config.AddJsonFile("appsettings.json", optional: false)
+            .AddJsonFile("appsettings.local.json", optional: true)
             .AddEnvironmentVariables()
             .Build();
     })
