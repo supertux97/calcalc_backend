@@ -1,13 +1,12 @@
 name: Run sync
 
 on:
-    schedule:
-        - cron: "0 23 * * *"
-    workflow_dispatch:
+  schedule:
+    - cron: "0 23 * * *"
+  workflow_dispatch:
 
 jobs:
   sync:
-
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -15,21 +14,25 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
+      
       - name: Setup dotnet
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '9.x.x' 
+          
       - name: Install dependencies
         run: dotnet restore
+        
       - name: Run sync
         run: dotnet run
-      - name: Get log file anme
+        
+      - name: Get log file name
         id: logfilename
         run: echo "LOGFILENAME=debug$(date +'%Y%m%dT%H:%M:%S').log" >> $GITHUB_ENV
+        
       - name: Upload dotnet test results
         uses: actions/upload-artifact@v4
         with:
           name: sync-results
-          path:  logs/$LOGFILENAME
-        # Use always() to always run this step to publish test results when there are test failures
+          path: logs/${{ env.LOGFILENAME }}
         if: ${{ always() }}
