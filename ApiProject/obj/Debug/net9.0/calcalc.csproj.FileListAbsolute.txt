@@ -674,3 +674,4 @@
 /Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/bin/Debug/net9.0/package-lock.json
 /Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/bin/Debug/net9.0/package.json
 /Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/obj/Debug/net9.0/compressed/ltym0rztjf-{0}-7bm5udxpyg-7bm5udxpyg.gz
+/Users/erlend/Documents/test_projects/aspdotnet/calcalc_backend/ApiProject/bin/Debug/net9.0/appsettings.local.json
