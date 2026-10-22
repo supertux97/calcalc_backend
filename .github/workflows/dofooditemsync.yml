@@ -40,5 +40,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: sync-results
-          path: logs/${{ env.LOGFILENAME }}
+          path: .FoodItemsSyncProject/logs/${{ env.LOGFILENAME }}
         if: ${{ always() }}
