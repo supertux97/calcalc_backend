@@ -3,7 +3,7 @@ name: Run food item sync
 on:
   schedule:
     # in utc time
-    - cron: "45 17 * * *"
+    - cron: "05 19 * * *"
   workflow_dispatch:
 
 jobs:

@@ -1,10 +1,12 @@
+using calcalc.Controllers;
 using calcalc.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using MvcMovie.Data;
 
 namespace tests;
 
-public class MockData:IDisposable,IAsyncDisposable
+public class MockData : IDisposable, IAsyncDisposable
 {
     private static CalCalcContext _db;
     static MockData()
@@ -45,7 +47,7 @@ public class MockData:IDisposable,IAsyncDisposable
                 }
             }
         };
-       
+
         // 
         var foodItems = new List<FoodItem>
         {
@@ -55,7 +57,7 @@ public class MockData:IDisposable,IAsyncDisposable
             new FoodItem { Id = 3, Name = "Melk a", Calories = 100m,
                 Units = new List<FoodHasUnit>
                 {
-                    new FoodHasUnit {FoodItemId = 3, FoodUnitId = 2, GramsPerUnit = 100}, 
+                    new FoodHasUnit {FoodItemId = 3, FoodUnitId = 2, GramsPerUnit = 100},
                     new FoodHasUnit {FoodItemId = 3, FoodUnitId = 1, GramsPerUnit = 1}
                 },
                 Synonyms = new List<FoodSynonym>
@@ -100,12 +102,12 @@ public class MockData:IDisposable,IAsyncDisposable
             new FoodItem { Id = 38, Name = "Egg", Calories = 100m,  Units = new List<FoodHasUnit> {new FoodHasUnit {FoodItemId = 38, FoodUnitId = 3, GramsPerUnit = 55}, new FoodHasUnit {FoodItemId = 38, FoodUnitId = 1, GramsPerUnit = 100}}  },
         };
 
-      
 
-    DbContextOptions< CalCalcContext > options = new DbContextOptionsBuilder< CalCalcContext>()
-            .UseInMemoryDatabase(Guid.NewGuid().ToString())
-            .Options;
-        
+
+        DbContextOptions<CalCalcContext> options = new DbContextOptionsBuilder<CalCalcContext>()
+                .UseInMemoryDatabase(Guid.NewGuid().ToString())
+                .Options;
+
         var _db = new CalCalcContext(options);
         foreach (var u in units)
         {
@@ -123,4 +125,6 @@ public class MockData:IDisposable,IAsyncDisposable
     {
         await _db.DisposeAsync();
     }
+
+
 }
